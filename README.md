@@ -16,7 +16,7 @@ Notes taken during learning Go lang
 
 - its preferable to keep a single workspace for go code. A single folder having all code that we write, This allows us easy package management and namespacing. So there wont be any conficts. Third party librarires come with this structure. so be used to it.
 
-- if using a third party package, we need to use the entire package name, while std packages needs just the name
+- if using a third party package, we need to use the entire package name, while std packages needs just the name. One of the reason while package strucutre is important. Clear separation of packages and namespaces.
 
 
 
