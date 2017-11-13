@@ -18,6 +18,10 @@ Notes taken during learning Go lang
 
 - if using a third party package, we need to use the entire package name, while std packages needs just the name. One of the reason while package strucutre is important. Clear separation of packages and namespaces.
 
+- definitely set the gopath to your workspace and goroot to where we installed go..
+
+
+
 
 
 -
