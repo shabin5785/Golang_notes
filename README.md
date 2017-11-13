@@ -9,3 +9,7 @@ Notes taken during learning Go lang
 - go lang playground to live check the code working..
 
 - generally semi colons are not inserted by user. They are automatically inserted by compiler. we can add semi colons if we need them or to help the compiler. 
+
+- firt line in the go file needs to be the package declartion. Then comes the import statement. then the main function that needs to run.
+
+
