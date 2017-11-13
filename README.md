@@ -12,4 +12,5 @@ Notes taken during learning Go lang
 
 - firt line in the go file needs to be the package declartion. Then comes the import statement. then the main function that needs to run.
 
+- golang is the standard package site. Godoc has third party packages as well..
 
