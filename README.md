@@ -14,5 +14,7 @@ Notes taken during learning Go lang
 
 - golang is the standard package site. Godoc has third party packages as well..
 
-- its preferable to keep a single workspace for go code. A single folder having all code that we write,
+- its preferable to keep a single workspace for go code. A single folder having all code that we write, This allows us easy package management and namespacing. So there wont be any conficts
+
+-
 
