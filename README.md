@@ -22,6 +22,8 @@ Notes taken during learning Go lang
 
 - file with main fn can be named anything.. Not jut main...but nice to do that so we can easily identify.
 
+- go run , runs the file while go build creates an executable which we can run ourselves.
+
 
 
 
