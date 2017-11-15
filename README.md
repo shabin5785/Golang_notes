@@ -20,7 +20,7 @@ Notes taken during learning Go lang
 
 - definitely set the gopath to your workspace and goroot to where we installed go.. go path defines where the pacakges we pull wll be saved.
 
-- file with main fn can be named anything.. Not jut main...but nice to do that so we can easily identif.
+- file with main fn can be named anything.. Not jut main...but nice to do that so we can easily identify.
 
 
 
