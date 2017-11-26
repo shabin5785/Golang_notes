@@ -22,7 +22,11 @@ Notes taken during learning Go lang
 
 - file with main fn can be named anything.. Not jut main...but nice to do that so we can easily identify.
 
-- go run , runs the file while go build creates an executable which we can run ourselves. go clean will remvoe the built file. go install will build and put the exe in the bin folder. Now we can run the exe file in the bin folder from any where as the bin folder is path.. cool.
+- go run , runs the file while go build creates an executable which we can run ourselves. go clean will remvoe the built file. go install will build and put the exe in the bin folder. Now we can run the exe file in the bin folder from any where as the bin folder is path.. cool
+
+- Printf is to print by formatting.
+
+- Go will trigger warning if we have packages impported that we are  not using.
 
 
 
