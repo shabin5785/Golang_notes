@@ -29,7 +29,8 @@ Notes taken during learning Go lang
 - Go will trigger warning if we have packages impported that we are  not using.
 
 
+**Packages**
 
+- package names should be same as folder name
+- system packages can be imported with the name, but third party packages need to given their full path for import
 
-
--
