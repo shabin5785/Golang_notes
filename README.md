@@ -34,3 +34,9 @@ Notes taken during learning Go lang
 - package names should be same as folder name
 - system packages can be imported with the name, but third party packages need to given their full path for import
 
+- functions and variables in files within same packages are accesible to each other. No need to import them. Package scope.
+
+- When something is lower case, its not exported outside the package, like func with lower case names. Ones with uppercase are exported to outside the package. But lower case funcs are visible within packages .
+
+
+
