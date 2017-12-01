@@ -45,3 +45,8 @@ Notes taken during learning Go lang
 - shorthand assignment of variables can be used within a func only.
 
 -  a := 10 is the shorthand declaration. Type is inferred by go
+- var b string => here b is declared as a type of string by us
+
+- if we declare a variable outside a function in a file, then that variable has pacakge level scope. Same is for a function. Its accesible for all files within a package.
+
+- scope of a variable starts when its decalred. we cannot use if before that.
