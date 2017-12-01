@@ -38,5 +38,10 @@ Notes taken during learning Go lang
 
 - When something is lower case, its not exported outside the package, like func with lower case names. Ones with uppercase are exported to outside the package. But lower case funcs are visible within packages .
 
+- if we run go build without a file name in a package with a main function, then it will build and create executable. 
+- go clean remvoes the build files..
 
+**Variables**
+- shorthand assignment of variables can be used within a func only.
 
+-  a := 10 is the shorthand declaration. Type is inferred by go
