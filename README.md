@@ -50,3 +50,5 @@ Notes taken during learning Go lang
 - if we declare a variable outside a function in a file, then that variable has pacakge level scope. Same is for a function. Its accesible for all files within a package.
 
 - scope of a variable starts when its decalred. we cannot use if before that.
+
+- but if we declare a variable in outer scope and use it in a inner scope, then we can define the variable anywhere in outerscope. in outer scope it can be used after declaration line, but in inner scope it can be used anywhere.
