@@ -74,4 +74,4 @@ const (
 
 There are many ways to do this..
 
-
+- const is a paralle eco system of values in go. read about this....
