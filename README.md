@@ -62,3 +62,16 @@ Notes taken during learning Go lang
 - now if an inner scope changes the value, its refelcted in outer scope, as the variable is held by outer scope.
 
 - with closure, we can return a function from another function. Now when we invoke the inner function, it can cahnge variables decalred in original function as the returned function has access to variables through closure.
+
+-Blank Identifier : we can tell compiler that we are not using a variable. Thats a blank identifier. use an _ for this
+- const : used to declare constants.iota identifier is used in const declarations to simplify definitions of incrementing numbers. Because it can be used in expressions, it provides a generality beyond that of simple enumerations.
+iota starts incrementing from 0 and upwards until its redeclared in another constant
+const (
+	a = iota // 0
+	b = iota // 1
+	c = iota // 2
+)
+
+There are many ways to do this..
+
+
