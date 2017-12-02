@@ -52,3 +52,13 @@ Notes taken during learning Go lang
 - scope of a variable starts when its decalred. we cannot use if before that.
 
 - but if we declare a variable in outer scope and use it in a inner scope, then we can define the variable anywhere in outerscope. in outer scope it can be used after declaration line, but in inner scope it can be used anywhere.
+
+
+**Closure**
+- inner scope can access variables decalred in outer scope. This doesnt normally includes package level varaibles, as they are accesible every where. So closue is like we have a varaible in a fn and a scope inside that fn can access that variable.
+
+- closure helps us reduce scope of variables. Without closure, we have to decalre all varaibles at package level.
+
+- now if an inner scope changes the value, its refelcted in outer scope, as the variable is held by outer scope.
+
+- with closure, we can return a function from another function. Now when we invoke the inner function, it can cahnge variables decalred in original function as the returned function has access to variables through closure.
