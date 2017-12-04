@@ -75,3 +75,6 @@ const (
 There are many ways to do this..
 
 - const is a paralle eco system of values in go. read about this....
+
+
+- Scan from fmt package is used to read data frmo console. Read data needs to be put into a memory address, so we have to pass a memory address to scan function.
