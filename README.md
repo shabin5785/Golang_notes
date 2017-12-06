@@ -88,4 +88,4 @@ There are many ways to do this..
 - for init;conditionl post {}
 - we can have just a condition and then for becoems a while. No deafult while in go.
 
-- A rune is a character. That's it. It is a single character. It's a character from any alphabet from any language from anywhere in the world.A string is different than a rune. In runes we use single quotes. while string uses double or back ticks
+- A rune is a character. That's it. It is a single character. It's a character from any alphabet from any language from anywhere in the world.A string is different than a rune. In runes we use single quotes. while string uses double or back ticks.  rune is also an alias for int32.The reason rune is an alias for int32 is because we see that with coding schemes. each character maps to some number and so it's the number that we are storing. For example, a maps to 97 and when we store that number it's just the number and so that's way rune is an alias for int32. But is not just any number. It is a number with 32 'zeros and ones' or '4' bytes
