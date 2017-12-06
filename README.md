@@ -82,3 +82,10 @@ There are many ways to do this..
 
 - go is by default pass by value
 
+**Control Flow**
+- there is no fall through in switch . When a condition is met switch exits. we can set it to fall through ourselves.
+
+- for init;conditionl post {}
+- we can have just a condition and then for becoems a while. No deafult while in go.
+
+- A rune is a character. That's it. It is a single character. It's a character from any alphabet from any language from anywhere in the world.A string is different than a rune. In runes we use single quotes. while string uses double or back ticks
