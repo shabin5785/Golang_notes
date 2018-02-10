@@ -22,3 +22,7 @@ Whatever main do es is what the program does
 -You must import exactly the packages you need. A program will not compile if there are
 missing imports or if there are unnecessary ones. This strict requirement prevents references
 to unused packages from acc umulat ing as programs evolve.
+
+-Go does not require semicolons at the ends of statements or declarations, except where two or
+more appear on the same line. In effect, newlines following certain tokens are converted into
+semicolons, so where newlines are placed matters to proper parsing of Go code.
