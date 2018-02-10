@@ -52,5 +52,17 @@ identifier may be used whenever syntax requires a variable name but prog ram log
 for instance to discard an unwanted lo op index when we require only the element value
 
 
--
+**Program Structure**
+- Go is case Sensitive
 
+-there are about three dozen predeclared names like int and true for built-in constants,
+types, and functions. We can redefine and use them . But around 25 keywords are not permitted to be used in our programs as variable names.
+
+-If an entity is declared within a function, it is local to that function. If declared outside of a
+function, however, it is visible in all files of the package to which it belongs. The cas e of the
+first letter of a name deter mines its visibility across package boundaries. If the name beg ins
+with an upper-case letter, it is exported, which means that it is visible and accessible outside of
+its own package and may be refer red to by other par ts of the program, as with Printf in the
+fmt package. Package names themselves are always in lower case.
+
+-
