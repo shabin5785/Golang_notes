@@ -68,4 +68,7 @@ fmt package. Package names themselves are always in lower case.
 -A declaration names a program entity and specifies some or all of its proper ties. There are
 four major kinds of declarat ions: **var, const, type, and func**.
 
-- 
+- A Go program is stored in one or more files whose names end in .go. Each file beg ins with a
+package de clarat ion that says what package the file is par t of.
+
+-
