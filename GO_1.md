@@ -89,4 +89,8 @@ Either the typ e or the = expression part may be omitted, but not both.
 for interfaces and reference typ es (slice, pointer, map, channel, function). The zero value of an
 aggregate typ e li ke an array or a str uct has the zero value of all of its elements or fields
 
+-The zero-value mechanism ensures that a var iable always holds a well-defined value of its typ e;
+**in Go there is no such thing as an uninitialized var iable.** This simplifies code and often
+ensures sensible behavior of boundary conditions without ext ra work
+
 
