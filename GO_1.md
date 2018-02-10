@@ -103,6 +103,8 @@ var b, f, s = true, 2.3, "four" // bool, float64, string
 d before main begins, and local variables are initialize d as their declarat ions are
 encountered during function execution.
 
+-A set of var iables can also be initialize d by cal ling a function that retur ns multiple values:
+	var f, err = os.Open(name) // os.Open returns a file and an error
 
 
 
