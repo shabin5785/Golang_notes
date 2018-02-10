@@ -106,7 +106,17 @@ encountered during function execution.
 -A set of var iables can also be initialize d by cal ling a function that retur ns multiple values:
 	var f, err = os.Open(name) // os.Open returns a file and an error
     
--
+-Within a function, an alternate form called a short variable declaration may be used to declare
+and initialize local var iables. It takes the form name := expression, and the typ e of name is
+deter mined by the typ e of expression
+  anim := gif.GIF{LoopCount: nframes}
+  freq := rand.Float64() * 3.0
+  t := 0.0
+  
+- A var de clarat ion tends to be res erved for local variables
+that need an explicit typ e that differs from that of the initializer expression, or for when the
+var iable will be assig ned a value later and its initial value is unimportant
+
 
 
 
