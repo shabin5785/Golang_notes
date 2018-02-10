@@ -105,6 +105,8 @@ encountered during function execution.
 
 -A set of var iables can also be initialize d by cal ling a function that retur ns multiple values:
 	var f, err = os.Open(name) // os.Open returns a file and an error
+    
+-
 
 
 
