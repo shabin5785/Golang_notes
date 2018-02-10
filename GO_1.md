@@ -94,9 +94,11 @@ aggregate typ e li ke an array or a str uct has the zero value of all of its ele
 ensures sensible behavior of boundary conditions without extra work
 
 -It is possible to declare and optionally initialize a set of var iables in a single declarat ion, with a
-matching list of expressions. Omitting the typ e al lows declarat ion of multiple var iables of different
+matching list of expressions. Omitting the type allows declaration of multiple var iables of different
 types:
 var i, j, k int // int, int, int
 var b, f, s = true, 2.3, "four" // bool, float64, string
+
+
 
 
