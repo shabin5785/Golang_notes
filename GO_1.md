@@ -15,4 +15,6 @@ de clarat ion, here package main, that states which package the file belongs to,
 of other packages that it imports, and then the declarat ions of the program that are stored in
 that file.
 
-
+-Package main is speci al. It defines a standalone executable program, not a librar y. Within
+package main the function main is also speci al—it’s where execution of the program beg ins.
+Whatever main do es is what the program does
