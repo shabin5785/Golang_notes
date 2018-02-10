@@ -123,6 +123,11 @@ i, j := 0, 1
 Like ordinar y var de clarat ions, short var iable declarat ions may be used for cal ls to functions
 li ke os.Open that retur n two or more values:
 
+-One subtle but important point: a short var iable declarat ion does not necessarily declare al l the
+variables on its left-hand side. If some of themwere already declared in the same lexic al block, then the short var iable declarat ion acts like an assignment to those variables.
+**A short var iable declarat ion must declare at least one new variable**, else code wont compile
+
+
 
 
 
