@@ -65,4 +65,7 @@ with an upper-case letter, it is exported, which means that it is visible and ac
 its own package and may be refer red to by other par ts of the program, as with Printf in the
 fmt package. Package names themselves are always in lower case.
 
--
+-A declaration names a program entity and specifies some or all of its proper ties. There are
+four maj or kinds of declarat ions: var, const, type, and func
+
+- 
