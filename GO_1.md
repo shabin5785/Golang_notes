@@ -19,4 +19,6 @@ that file.
 package main the function main is also special—it’s where execution of the program beg ins.
 Whatever main do es is what the program does
 
-
+-You must import exac tly the packages you need. A program wi l l not compile if there are
+missing imports or if there are unnecessary ones. This strict requirement prevents references
+to unused packages from acc umulat ing as programs evolve.
