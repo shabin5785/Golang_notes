@@ -87,4 +87,6 @@ Either the typ e or the = expression part may be omitted, but not both.
 
 -If the type is omitted, it is deter mined by the initializer expression. If the expression is omitted, the initial value is the zero value for the typ e, which is 0 for numbers, false for boole ans, "" for str ings, and nil
 for interfaces and reference typ es (slice, pointer, map, channel, function). The zero value of an
-ag gregate typ e li ke an array or a str uct has the zero value of all of its elements or fields
+aggregate typ e li ke an array or a str uct has the zero value of all of its elements or fields
+
+
