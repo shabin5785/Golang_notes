@@ -99,6 +99,10 @@ types:
 var i, j, k int // int, int, int
 var b, f, s = true, 2.3, "four" // bool, float64, string
 
+-Initializers may be literal values or arbitrar y expressions. Package-le vel var iables are initialize
+d before main begins (§2.6.2), and local variables are initialize d as their declarat ions are
+encountered during function execution.
+
 
 
 
