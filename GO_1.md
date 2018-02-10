@@ -113,9 +113,13 @@ deter mined by the typ e of expression
   freq := rand.Float64() * 3.0
   t := 0.0
   
-- A var de clarat ion tends to be res erved for local variables
+- A var declaration tends to be res erved for local variables
 that need an explicit typ e that differs from that of the initializer expression, or for when the
 var iable will be assig ned a value later and its initial value is unimportant
+
+-As with var de clarat ions, multiple var iables may be declared and initialize d in the same short
+var iable declarat ion,
+i, j := 0, 1
 
 
 
