@@ -30,3 +30,14 @@ semicolons, so where newlines are placed matters to proper parsing of Go code.
 -Go takes a strong stance on code formatting. The gofmt tool rewrites code into the standard
 format, and the go tool’s fmt subcommand applies gofmt to all the files in the specified package,
 or the ones in the cur rent direc tor y by defau lt.
+
+**Command Line Args**
+
+-The os package provides functions and other values for dealing with the operat ing system in a
+platform-indep endent fashion. Command-line arguments are avai lable to a program in a
+var iable named Args that is par t of the os package; thus its name anywhere outside the os
+package is os.Args.
+
+-The first element of os.Args, os.Args[0], is the name of the command its elf; the other elements
+are the arguments that were presented to the program when it started execution. A
+slice expression of the form s[m:n] yields a slice that refers to elements m through n1,
