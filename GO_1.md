@@ -7,3 +7,12 @@ files whose names end in .go, lin ks it with librar ies, then runs the resulting
 
 -If the program is more than a one-shot exp eriment, it’s likely that you would want to compile
 it once and save the compiled result for later use. That is done with go build:
+
+-Go code is organize d into packages, which are similar
+to libraries or modules in other langu ages. A package consists of one or more .go source files
+in a single direc tor y that define what the package does. Each source file beg ins with a package
+de clarat ion, here package main, that states which package the file belongs to, followed by a list
+of other packages that it imports, and then the declarat ions of the program that are stored in
+that file.
+
+
