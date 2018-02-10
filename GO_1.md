@@ -74,6 +74,6 @@ package de clarat ion that says what package the file is par t of.
 -The name of each package-le vel entity is visible not only
 throughout the source file that contains its declarat ion, but throughout all the files of the package.
 By contrast, local declarat ions are visible only within the function in which they are
-de clared and perhaps only within a smal l part of it
+de clared and perhaps only within a small part of it
 
 -
