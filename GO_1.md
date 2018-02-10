@@ -41,3 +41,14 @@ package is os.Args.
 -The first element of os.Args, os.Args[0], is the name of the command its elf; the other elements
 are the arguments that were presented to the program when it started execution. A
 slice expression of the form s[m:n] yields a slice that refers to elements m through n-1
+
+-For Range loop, In each iteration of the loop, range produces a pair of values: the index and the value of the
+element at that index. In this example, we don’t need the index, but the syntax of a range lo op
+requires that if we deal with the element, we must deal with the index too. One ide a would be
+to assig n the index to an obviously temporar y var iable like temp and ignore its value, but Go
+do es not per mit unused local variables, so this would result in a compilat ion error.
+The solution is to use the blank identifier, whose name is _ (t hat is, an underscore). The blank
+identifier may be used whenever syntax requires a variable name but prog ram log ic do es not,
+for instance to discard an unwanted lo op index when we require only the element value
+
+
