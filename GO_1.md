@@ -120,6 +120,10 @@ var iable will be assig ned a value later and its initial value is unimportant
 -As with var de clarat ions, multiple var iables may be declared and initialize d in the same short
 var iable declarat ion,
 i, j := 0, 1
+Like ordinar y var de clarat ions, short var iable declarat ions may be used for cal ls to functions
+li ke os.Open that retur n two or more values:
+
+
 
 
 
