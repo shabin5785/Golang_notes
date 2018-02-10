@@ -76,4 +76,11 @@ throughout the source file that contains its declarat ion, but throughout all th
 By contrast, local declarat ions are visible only within the function in which they are
 de clared and perhaps only within a small part of it
 
--
+
+**Variables** 
+
+-A var de clarat ion creates a var iable of a par tic ular typ e, attaches a name to it, and sets its initial
+value. Each declarat ion has the general form
+_var name type = expression_
+
+Either the typ e or the = expression part may be omitted, but not both.
