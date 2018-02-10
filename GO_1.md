@@ -26,3 +26,7 @@ to unused packages from acc umulat ing as programs evolve.
 -Go does not require semicolons at the ends of statements or declarations, except where two or
 more appear on the same line. In effect, newlines following certain tokens are converted into
 semicolons, so where newlines are placed matters to proper parsing of Go code.
+
+-Go takes a strong stance on code formatting. The gofmt tool rewrites code into the standard
+format, and the go tool’s fmt subcommand applies gofmt to all the files in the specified package,
+or the ones in the cur rent direc tor y by defau lt.
