@@ -91,6 +91,12 @@ aggregate typ e li ke an array or a str uct has the zero value of all of its ele
 
 -The zero-value mechanism ensures that a var iable always holds a well-defined value of its typ e;
 **in Go there is no such thing as an uninitialized var iable.** This simplifies code and often
-ensures sensible behavior of boundary conditions without ext ra work
+ensures sensible behavior of boundary conditions without extra work
+
+-It is possible to declare and optionally initialize a set of var iables in a single declarat ion, with a
+matching list of expressions. Omitting the typ e al lows declarat ion of multiple var iables of different
+types:
+var i, j, k int // int, int, int
+var b, f, s = true, 2.3, "four" // bool, float64, string
 
 
