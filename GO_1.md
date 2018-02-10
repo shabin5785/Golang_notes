@@ -40,4 +40,4 @@ package is os.Args.
 
 -The first element of os.Args, os.Args[0], is the name of the command its elf; the other elements
 are the arguments that were presented to the program when it started execution. A
-slice expression of the form s[m:n] yields a slice that refers to elements m through n1,
+slice expression of the form s[m:n] yields a slice that refers to elements m through n-1
