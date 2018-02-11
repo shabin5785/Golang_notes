@@ -305,6 +305,10 @@ Initializat ion proceeds from the bottom up; the main package is the last to be 
 this manner, all packages are fully initialize d before the applic ation’s main function beg ins.
 
 **Variable Scope**
+-Don’t confuse scope with lifet ime. The scope of a declarat ion is a reg ion of the program text;
+it is a compile-t ime proper ty. The lifet ime of a var iable is the range of time dur ing execution
+when the var iable can be refer red to by other par ts of the program; it is a run-t ime proper ty.
+
 
 
 
