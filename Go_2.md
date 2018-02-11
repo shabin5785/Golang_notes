@@ -95,4 +95,11 @@ returns such a value. It’s tempting to use NaN as a sentinel value in a numer 
 but testing whether a specific computational result is equal to NaN is fraug ht with peril
 because any **comparison with NaN always yields false:**
 
+-Go provides two sizes of complex numbers, complex64 and complex128, whose components
+are float32 and float64 respectively. The bui lt-in function complex creates a complex number
+from its real and imaginary components, and the bui lt-in real and imag functions ext ract
+thos e components
+
+
+
 
