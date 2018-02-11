@@ -151,6 +151,13 @@ fmt.Println(x) // "2"
 Pointers are comparable; two pointers are equal if and only if they point to the same
 var iable or both are nil.
 
+-Each time we take the address of a var iable or copy a pointer, we create new aliases or ways to
+identify the same var iable. For example, *p is an ali as for v. Pointer ali asing is useful because
+it allows us to access a var iable without using its name, but this is a double-e dged sword: to
+find all the statements that access a var iable, we have to know all its alias es. It’s not just pointers
+that create ali ases; aliasing also occurs when we copy values of other reference typ es li ke
+slices, maps, and channels, and even str ucts, arrays, and interfaces that contain these typ es
+
 
 
 
