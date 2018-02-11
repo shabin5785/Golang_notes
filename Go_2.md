@@ -48,3 +48,8 @@ si lently discarded
 -al l values of basic typ e—boole ans, numbers, and str ings—are comparable, meaning
 that two values of the same typ e may be compared using the == and != operators. Fur thermore,
 integers, floating-p oint numbers, and str ings are ordered by the comparison operators.
+
+-There are also unar y addition and subtrac tion operators:
++ unar y positive (no effec t)
+unary negat ion
+
