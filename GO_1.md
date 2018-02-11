@@ -206,8 +206,8 @@ a[i], a[j] = a[j], a[i]
 i, j, k = 2, 3, 5
 
 - Certain expressions, such as a cal l to a function with multiple results, produce several values.
-When such a cal l is used in an assig nment statement, the lef t-hand side must have as many
-var iables as the function has results.
+When such a call is used in an assignment statement, the left hand side must have as many
+variables as the function has results.
 
 
 
