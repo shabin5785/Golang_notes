@@ -306,8 +306,19 @@ this manner, all packages are fully initialize d before the applic ation’s mai
 
 **Variable Scope**
 -Don’t confuse scope with lifet ime. The scope of a declarat ion is a reg ion of the program text;
-it is a compile-t ime proper ty. The lifet ime of a var iable is the range of time dur ing execution
+it is a compile-time proper ty. The lifet ime of a var iable is the range of time dur ing execution
 when the var iable can be refer red to by other par ts of the program; it is a run-t ime proper ty.
+
+-A **syntactic block** is a sequence of statements enclos ed in braces like those that sur round the
+body of a function or loop. A name declared inside a syntactic blo ck is not visible outside that
+block. The blo ck enclos es its declarat ions and deter mines their scope. We can generalize this
+notion of blo cks to include other groupings of declarat ions that are not explicitly sur rounded
+by braces in the source code; we’ll cal l them all **lexical blocks**. There is a lexic al block for the
+entire source code, calle d the **universe block**; for each package; for each file; for each for, if,
+and switch statement; for each cas e in a switch or select statement; and, of course, for each
+explicit syntactic blo ck.
+
+
 
 
 
