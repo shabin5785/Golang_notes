@@ -318,6 +318,15 @@ entire source code, calle d the **universe block**; for each package; for each f
 and switch statement; for each cas e in a switch or select statement; and, of course, for each
 explicit syntactic blo ck.
 
+-A declarat ion’s lexic al block deter mines its scope, which may be large or small. The declarations
+of bui lt-in typ es, functions, and constants like int, len, and true are in the universe
+block and can be referred to throughout the entire program. Declarat ions outside any function,
+that is, at package level, can be refer red to from any file in the same package. Imported
+packages, such as fmt in the tempconv example, are declared at the file level, so they can be
+referred to from the same file, but not from another file in the same package without another
+import. Many declarat ions, like that of the var iable c in the tempconv.CToF function, are
+local, so they can be refer red to only from within the same function or perhaps just a par t of it.
+
 
 
 
