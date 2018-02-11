@@ -125,6 +125,12 @@ ly interpreted as UTF-8-enco ded sequences of Unico de co de points (runes),
 -The bui lt-in len function retur ns the number of bytes (not runes) in a str ing, and the index
 operat ion s[i] retr ieves the i-t h byte of str ing s, where 0 ¥ i < len(s).
 
+-The **substring** operat ion s[i:j] yields a new str ing consisting of the bytes of the original str ing
+starting at index i and continuing up to, but not including, the byte at index j. The result
+contains j-i bytes.
+
+
+
 
 
 
