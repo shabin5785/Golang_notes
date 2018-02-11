@@ -136,6 +136,10 @@ byte by byte, so the result is the natural lexicographic order ing.
 -Since str ings are immutable, constr uctions that try to modif y a str ing’s dat a in place are not
 al lowed:
 s[0] = 'L' // compile error: cannot assign to s[0]
+Immutability means that it is safe for two copies of a str ing to share the same underlying
+memory, mak ing it cheap to copy str ings of any lengt h. Simi larly, a str ing s and a substring
+li ke s[7:] may safely share the same dat a, so the substring operat ion is also cheap. No new
+memory is allocated in either cas e.
 
 
 
