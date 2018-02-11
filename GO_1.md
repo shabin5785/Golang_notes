@@ -282,6 +282,12 @@ necessarily unique) name that appears in its package de clarat ion. By conventio
 name matches the last seg ment of its import pat h, making it easy to predic t that the package
 name of gopl.io/ch2/tempconv is tempconv.
 
+-The import declarat ion binds a short name to the imported package that may be used to refer
+to its contents throughout the file. The import ab ove lets us refer to names within
+gopl.io/ch2/tempconv by using a qualified identifier li ke tempconv.CToF. By defau lt, the
+short name is the package name—tempconv in this cas e—but an import declarat ion may
+specif y an alternat ive name to avoid a conflic t
+
 
 
 
