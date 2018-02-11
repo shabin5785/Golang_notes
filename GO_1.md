@@ -262,7 +262,9 @@ fmt.Println(c == Celsius(f)) // "true"!
 over and over again.Named types also make it possible to define new behaviors for values of the typ e. These
 behaviors are expressed as a set of functions associ ated with the typ e, cal le d the typ e’s methods.
 
+**Packages and Files**
 
+-
 
 
 
