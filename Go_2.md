@@ -101,5 +101,17 @@ from its real and imaginary components, and the bui lt-in real and imag function
 thos e components
 
 
+-A value of typ e bool, or boolean, has only two possible values, true and false. The conditions
+in if and for statements are boole ans, and comparison operators li ke == and < produce
+a boole an result. The unary operator ! is log ical negat ion, so !true is false, or, one mig ht
+say, (!true==false)==true, although as a matter of sty le, we always simplif y redundant
+boole an expressions like x==true to x.
+Boolean values can be combined with the && (AND) and || (OR) operators, which have shortcircuit
+behavior: if the answer is already deter mined by the value of the lef t operand, the rig ht
+operand is not evaluated,
+
+
+
+
 
 
