@@ -127,8 +127,12 @@ li ke os.Open that retur n two or more values:
 variables on its left-hand side. If some of themwere already declared in the same lexic al block, then the short var iable declarat ion acts like an assignment to those variables.
 **A short var iable declarat ion must declare at least one new variable**, else code wont compile
 
+**Pointers**
 
-
+-A pointer value is the address of a var iable. A pointer is thus the locat ion at which a value is
+stored. Not every value has an address, but every var iable does. With a pointer, we can read
+or update the value of a var iable indirectly, without using or even knowing the name of the
+var iable, if indeed it has a name.
 
 
 
