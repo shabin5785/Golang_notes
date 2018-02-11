@@ -122,6 +122,8 @@ i = 1
 bytes with value 0, but usually they contain human-readable text. Text str ings are conventional
 ly interpreted as UTF-8-enco ded sequences of Unico de co de points (runes),
 
+-The bui lt-in len function retur ns the number of bytes (not runes) in a str ing, and the index
+operat ion s[i] retr ieves the i-t h byte of str ing s, where 0 ¥ i < len(s).
 
 
 
