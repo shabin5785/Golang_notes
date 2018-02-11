@@ -221,7 +221,7 @@ internal ly, the intrinsic operat ions that can be per formed on them, and the m
 with them.
 
 
--A type de clarat ion defines a new named ty pe that has the same underlying type as an existing
+-A type declaration defines a new named ty pe that has the same underlying type as an existing
 type. The named typ e provides a way to sep arate dif ferent and perhaps incompatible uses of
 the underlying typ e so that they can’t be mixed unintentionally.
 type name underlyingtype
