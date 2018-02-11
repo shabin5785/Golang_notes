@@ -8,3 +8,18 @@ slices (§4.2), maps (§4.3), functions (Chapter 5), and channels (C hapter 8), 
 in common is that they al l refer to program variables or state indirectly, so that the effec t of an
 operat ion applie d to one reference is obs erved by all copies of that reference.
 
+-Go’s numer ic data typ es include several sizes of integers, floating-p oint numbers, and complex
+numbers. Each numer ic type deter mines the size and sig nedness of its values.
+
+-Go provides both sig ned and unsig ned integer arithmetic. There are four distinct sizes of
+sig ned integers—8, 16, 32, and 64 bits—repres ented by the typ es int8, int16, int32, and
+int64, and corresponding unsig ned versions uint8, uint16, uint32, and uint64
+
+-There are also two typ es called just int and uint that are the natural or most efficient size for
+sig ned and unsig ned integers on a par tic ular platform;**Both thes e types have the same size, either 32 or 64 bits, but one must not make assumptions about which**; different compilers may make dif ferent choices even on identical hardware.
+
+-The typ e **rune** is an synonym for int32 and conventionally indic ates that a value is a Unico de
+co de point. The two names may be used interchangeably. Simi larly, the typ e **byte** is an synonym
+for uint8, and emphasizes that the value is a pie ce of raw dat a rat her than a small
+numeric quantity.
+
