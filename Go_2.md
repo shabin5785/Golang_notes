@@ -23,3 +23,12 @@ co de point. The two names may be used interchangeably. Simi larly, the typ e **
 for uint8, and emphasizes that the value is a pie ce of raw dat a rat her than a small
 numeric quantity.
 
+-Final ly, there is an unsig ned integer typ e **uintptr**, whose width is not specified but is sufficient
+to hold all the bits of a pointer value. The uintptr type is used only for low-le vel
+prog ramming,
+
+-Regardless of their size, int, uint, and uintptr are dif ferent typ es from their explicitly size d
+siblings. **Thus int is not the same typ e as int32, even if the natural size of integers is 32 bits**,
+and an explicit conversion is required to use an int value where an int32 is needed, and vice
+versa.
+
