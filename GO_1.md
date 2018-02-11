@@ -245,6 +245,11 @@ type, or if both are unnamed pointer typ es that point to var iables of the same
 thes e conversions change the typ e but not the representation of the value. If x is assig nable to
 T, a conversion is per mitted but is usually redundant
 
+-The underlying typ e of a named typ e deter mines its str ucture and representation, and also the
+set of intrinsic operat ions it supports, which are the same as if the underlying typ e had been
+used direc tly. That means that arithmetic operators work the same for Celsius and Fahrenheit
+as they do for float64
+
 
 
 
