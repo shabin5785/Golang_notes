@@ -134,6 +134,15 @@ stored. Not every value has an address, but every var iable does. With a pointer
 or update the value of a var iable indirectly, without using or even knowing the name of the
 var iable, if indeed it has a name.
 
+-If a var iable is declared var x int, the expression &x (‘‘address of x’’) yields a pointer to an
+integer var iable, that is, a value of typ e *int, which is pronounced ‘‘pointer to int.’’ If this
+value is cal le d p, we say ‘‘p points to x,’’ or equivalently ‘‘p contains the address of x.’’ The var iable
+to which p points is written *p. The expression *p yields the value of that var iable, an
+int, but since *p denotes a var iable, it may also appear on the lef t-hand side of an assig nment,
+in which cas e the assig nment updates the var iable
+
+-
+
 
 
 
