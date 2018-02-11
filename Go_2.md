@@ -127,7 +127,13 @@ operat ion s[i] retr ieves the i-t h byte of str ing s, where 0 ¥ i < len(s).
 
 -The **substring** operat ion s[i:j] yields a new str ing consisting of the bytes of the original str ing
 starting at index i and continuing up to, but not including, the byte at index j. The result
-contains j-i bytes.
+contains j-i bytes. Either or both of the i and j operands may be omitted, in which cas e the defau lt values of 0
+(t he start of the str ing) and len(s) (its end) are assumed
+
+-Strings may be compared with comparison operators li ke == and <; the comparison is done
+byte by byte, so the result is the natural lexicographic order ing.
+
+
 
 
 
