@@ -141,6 +141,18 @@ memory, mak ing it cheap to copy str ings of any lengt h. Simi larly, a str ing 
 li ke s[7:] may safely share the same dat a, so the substring operat ion is also cheap. No new
 memory is allocated in either cas e.
 
+-A **raw string literal** is written `...`, using backquotes instead of double quotes. Within a raw
+string literal, no escap e sequences are processed; the contents are taken literal ly, including
+backslashes and newlines, so a raw str ing literal may spread over several lines in the program
+source. The only processing is that car r iage retur ns are deleted so that the value of the str ing
+is the same on all platforms, including those that conventionally put car r iage retur ns in text
+files.
+Raw str ing literals are a convenient way to write regu lar expressions, which tend to have lots of
+backslashes. They are also useful for HTML templates, JSON literals, command usage messages,
+and the like, which often extend over multiple lines.
+
+
+
 
 
 
