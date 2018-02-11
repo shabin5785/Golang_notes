@@ -250,6 +250,15 @@ set of intrinsic operat ions it supports, which are the same as if the underlyin
 used direc tly. That means that arithmetic operators work the same for Celsius and Fahrenheit
 as they do for float64
 
+var c Celsius
+var f Fahrenheit
+fmt.Println(c == 0) // "true"
+fmt.Println(f >= 0) // "true"
+fmt.Println(c == f) // compile error: type mismatch
+fmt.Println(c == Celsius(f)) // "true"!
+
+
+
 
 
 
