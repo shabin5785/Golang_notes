@@ -133,7 +133,9 @@ contains j-i bytes. Either or both of the i and j operands may be omitted, in wh
 -Strings may be compared with comparison operators li ke == and <; the comparison is done
 byte by byte, so the result is the natural lexicographic order ing.
 
-
+-Since str ings are immutable, constr uctions that try to modif y a str ing’s dat a in place are not
+al lowed:
+s[0] = 'L' // compile error: cannot assign to s[0]
 
 
 
