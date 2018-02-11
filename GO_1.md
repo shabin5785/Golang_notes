@@ -196,5 +196,18 @@ For example, keeping unnecessary pointers to short-lived objec ts within long-li
 especi ally global var iables, will prevent the garb age collec tor from reclaiming the short-lived
 objec ts.
 
+**Variable Assignment**
+-Another form of assig nment, known as tuple assignment, allows several variables to be
+assig ned at once. All of the rig ht-hand side expressions are evaluated before any of the var iables
+are updated, mak ing this form most useful when some of the var iables appear on both
+sides of the assig nment,
+x, y = y, x
+a[i], a[j] = a[j], a[i]
+i, j, k = 2, 3, 5
+
+
+
+
+
 
 
