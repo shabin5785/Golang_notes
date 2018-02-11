@@ -273,6 +273,15 @@ in the unicode/utf16 package.
 or exported. In Go, a simple rule governs which identifiers are exp orted and which are
 not: exported identifiers start with an upper-case letter.
 
+-Within a Go program, every package is identified by a unique str ing cal le d its import path.The langu age specification doesn’t define where these str ings come from or what they mean;
+it’s up to the tools to interpret them. When using the go tool (Chapter 10), an import pat h
+denotes a direc tor y containing one or more Go source files that toget her make up the package
+
+-In addition to its import pat h, each package has a package name, which is the short (and not
+necessarily unique) name that appears in its package de clarat ion. By convention, a package’s
+name matches the last seg ment of its import pat h, making it easy to predic t that the package
+name of gopl.io/ch2/tempconv is tempconv.
+
 
 
 
