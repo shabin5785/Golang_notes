@@ -304,6 +304,9 @@ so a package p importing q can be sure that q is fully initialize d before p’s
 Initializat ion proceeds from the bottom up; the main package is the last to be initialize d. In
 this manner, all packages are fully initialize d before the applic ation’s main function beg ins.
 
+**Variable Scope**
+
+
 
 
 
