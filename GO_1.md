@@ -291,6 +291,14 @@ specif y an alternat ive name to avoid a conflic t
 -Package initializat ion beg ins by initializing package-le vel var iables in the order in which they
 are declared, except that dep endencies are res olved first.If the package has multiple .go files, they are initialize d in the order in which the files are given to the compiler ; the go tool sorts .go files by name before invoking the compiler.
 
+- Each var iable declared at package level starts life with the value of its initializer expression, if
+any, but for some var iables, like tables of dat a, an initializer expression may not be the simplest
+way to set its initial value. In that cas e, the **init function** mechanism may be simpler. Any
+file may contain any number of functions whose declarat ion is just
+func init() { /* ... */ }
+Such init functions can’t be cal le d or reference d, but other wise they are normal functions.
+Within each file, init functions are
+
 
 
 
