@@ -84,5 +84,15 @@ provides about 15 dig its; float64 should be preferred for most pur pos es becau
 computations acc umulate error rapid ly unless one is quite caref ul, and the smallest positive
 integer that cannot be exac tly represented as a float32 is not large
 
+-In addition to a large collec tion of the usual mat hemat ical functions, the math package has
+functions for creating and detec ting the speci al values defined by IEEE 754: the positive and
+negat ive infinities, which represent numbers of excessive mag nitude and the result of division
+by zero; and NaN (‘‘not a number’’), the result of such mat hemat ical ly dubious operat ions as
+0/0 or Sqrt(1).
+
+-The function math.IsNaN tests whether its argument is a not-a-number value, and math.NaN
+returns such a value. It’s tempting to use NaN as a sentinel value in a numer ic computation,
+but testing whether a specific computational result is equal to NaN is fraug ht with peril
+because any **comparison with NaN always yields false:**
 
 
