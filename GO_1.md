@@ -299,7 +299,10 @@ func init() { /* ... */ }
 Such init functions can’t be cal le d or reference d, but other wise they are normal functions.
 Within each file, init functions are
 
-
+-One package is initialize d at a time, in the order of imports in the program, dependencies first,
+so a package p importing q can be sure that q is fully initialize d before p’s initializat ion beg ins.
+Initializat ion proceeds from the bottom up; the main package is the last to be initialize d. In
+this manner, all packages are fully initialize d before the applic ation’s main function beg ins.
 
 
 
