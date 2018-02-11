@@ -171,7 +171,30 @@ fmt.Println(*p) // "0"
 *p = 2 // sets the unnamed int to 2
 fmt.Println(*p) // "2"
 
+-A var iable created with new is no dif ferent from an ordinar y lo cal variable whose address is
+taken, except that there’s no need to invent (and declare) a dummy name, and we can use
+new(T) in an expression. Thus new is only a syntactic convenience, not a fundamental notion:
 
+-Each cal l to new returns a distinct var iable with a unique address:
+p := new(int)
+q := new(int)
+fmt.Println(p == q) // "false"
+
+**Lifetime of Variable**
+
+-The lifetime of a var iable is the interval of time dur ing which it exists as the program exec utes.
+The lifet ime of a package-le vel var iable is the entire execution of the program. By contrast,
+lo cal variables have dynamic lifet imes: a new instance is created each time the declarat ion
+statement is executed, and the var iable lives on until it becomes unreachable, at which point its
+storage may be rec ycled. Function parameters and results are local variables too; they are created
+each time their enclosing function is cal le d.
+
+-Garb age collec tion is a tremendous help in writing correc t prog rams, but it does not relie ve
+you of the burden of thin king about memor y. You don’t need to explicitly allocate and free
+memory, but to write efficient programs you still need to be aware of the lifet ime of var iables.
+For example, keeping unnecessary pointers to short-lived objec ts within long-lived objec ts,
+especi ally global var iables, will prevent the garb age collec tor from reclaiming the short-lived
+objec ts.
 
 
 
