@@ -183,7 +183,23 @@ d
 )
 fmt.Println(a, b, c, d) // "1 1 2 2"
 
-
+-A const de clarat ion may use the **constant generator iota**, which is used to create a sequence
+of related values without spelling out each one explicitly. In a const de clarat ion, the value of
+iota begins at zero and increments by one for each item in the sequence.
+Here’s an example from the time package, which defines named constants of typ e Weekday for
+the days of the week, starting with zero for Sunday. Typ es of this kind are often cal le d **enumerations**,
+or **enums** for short.
+type Weekday int
+const (
+Sunday Weekday = iota
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+)
+This declares Sunday to be 0, Monday to be 1, and so on.
 
 
 
