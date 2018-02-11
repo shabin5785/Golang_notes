@@ -78,5 +78,11 @@ fmt.Printf("%d %[1]c %[1]q\n", ascii) // "97 a 'a'"
 fmt.Printf("%d %[1]c %[1]q\n", unicode) // "22269 D 'D'"
 fmt.Printf("%d %[1]q\n", newline) // "10 '\n'"
 
+-Go provides two sizes of floating-p oint numbers, float32 and float64.
+A float32 provides approximately six decimal digits of precision, whereas a float64
+provides about 15 dig its; float64 should be preferred for most pur pos es because float32
+computations acc umulate error rapid ly unless one is quite caref ul, and the smallest positive
+integer that cannot be exac tly represented as a float32 is not large
+
 
 
