@@ -172,6 +172,17 @@ detec ted at run time can be rep orted at compile time when their operands are c
 as integer division by zero, str ing indexing out of bounds, and any floating-p oint operat ion
 that would result in a non-finite value.
 
+-When a sequence of constants is declared as a group, the rig ht-hand side expression may be
+omitted for all but the first of the group, implying that the previous expression and its typ e
+should be used again. For example:
+const (
+a = 1
+b
+c = 2
+d
+)
+fmt.Println(a, b, c, d) // "1 1 2 2"
+
 
 
 
