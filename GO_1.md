@@ -214,6 +214,7 @@ prog ram where an assig nment occ urs **implicitly**: a function cal l implicitl
 values to the corresponding parameter variables; a return statement implicitly assig ns the
 return operands to the corresponding result var iables;
 
+**Variable Type**
 
 
 
