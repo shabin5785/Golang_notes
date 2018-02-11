@@ -110,6 +110,13 @@ Boolean values can be combined with the && (AND) and || (OR) operators, which ha
 behavior: if the answer is already deter mined by the value of the lef t operand, the rig ht
 operand is not evaluated,
 
+-There is no implicit conversion from a boole an value to a numer ic value like 0 or 1, or vice
+versa. It’s necessary to use an explicit if, as in
+i := 0
+if b {
+i = 1
+}
+
 
 
 
