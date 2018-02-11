@@ -289,7 +289,9 @@ short name is the package name—tempconv in this cas e—but an import declarat
 specif y an alternat ive name to avoid a conflic t
 
 -Package initializat ion beg ins by initializing package-le vel var iables in the order in which they
-are declared, except that dep endencies are res olved first.
+are declared, except that dep endencies are res olved first.If the package has multiple .go files, they are initialize d in the order in which the files are given to the compiler ; the go tool sorts .go files by name before invoking the compiler.
+
+
 
 
 
