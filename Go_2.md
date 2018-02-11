@@ -118,6 +118,10 @@ i = 1
 }
 
 **Strings**
+-A str ing is an immutable sequence of bytes. Str ings may contain arbitrar y data, including
+bytes with value 0, but usually they contain human-readable text. Text str ings are conventional
+ly interpreted as UTF-8-enco ded sequences of Unico de co de points (runes),
+
 
 
 
