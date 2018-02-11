@@ -264,7 +264,14 @@ behaviors are expressed as a set of functions associ ated with the typ e, cal le
 
 **Packages and Files**
 
--
+-Packages in Go ser ve the same pur pos es as librar ies or modules in other langu ages, supporting
+modular ity, encapsulat ion, sep arate compilat ion, and reuse. Each package ser ves as a sep arate name space for its declarat ions. Within the image package,
+for example, the identifier Decode refers to a dif ferent function than does the same identifier
+in the unicode/utf16 package.
+
+-Packages also let us hide informat ion by controlling which names are visible outside the package,
+or exported. In Go, a simple rule governs which identifiers are exp orted and which are
+not: exported identifiers start with an upper-case letter.
 
 
 
