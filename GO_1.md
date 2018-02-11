@@ -327,7 +327,8 @@ referred to from the same file, but not from another file in the same package wi
 import. Many declarat ions, like that of the var iable c in the tempconv.CToF function, are
 local, so they can be refer red to only from within the same function or perhaps just a par t of it.
 
-
+-The scope of a control-flow lab el, as used by break, continue, and goto statements, is the
+entire enclosing function.
 
 
 
