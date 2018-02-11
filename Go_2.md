@@ -53,5 +53,19 @@ integers, floating-p oint numbers, and str ings are ordered by the comparison op
 + unar y positive (no effec t)
 -unary negat ion
 
+-Although Go provides unsig ned numbers and arithmetic, we tend to use the sig ned int form
+even for quantities that can’t be negat ive, such as the lengt h of an array, thoug h uint mig ht
+seem a more obvious choice. Indeed, the bui lt-in len function retur ns a sig ned int,
+medals := []string{"gold", "silver", "bronze"}
+for i := len(medals) 1;
+i >= 0; i{
+fmt.Println(medals[i]) // "bronze", "silver", "gold"
+}
+The alternat ive would be cal amitous. If len returned an unsig ned number, then i too would
+be a uint, and the condition i >= 0 would always be true by definition. After the third iteration,
+in which i == 0, the i-- statement would cause i to become not −1, but the maximum
+uint value (for example, 264−1), and the evaluation of medals[i] would fai l at run time, or
+panic (§5.9), by attempting to access an element outside the bounds of the slice.
+
 
 
