@@ -147,6 +147,10 @@ fmt.Println(*p) // "1"
 *p = 2 // equivalent to x = 2
 fmt.Println(x) // "2"
 
+-The zero value for a pointer of any typ e is nil. The test p != nil is true if p points to a var iable.
+Pointers are comparable; two pointers are equal if and only if they point to the same
+var iable or both are nil.
+
 
 
 
