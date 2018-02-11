@@ -209,6 +209,13 @@ i, j, k = 2, 3, 5
 When such a call is used in an assignment statement, the left hand side must have as many
 variables as the function has results.
 
+- Assig nment statements are an explicit form of assig nment, but there are many places in a
+prog ram where an assig nment occ urs **implicitly**: a function cal l implicitly assig ns the argument
+values to the corresponding parameter variables; a return statement implicitly assig ns the
+return operands to the corresponding result var iables;
+
+
+
 
 
 
