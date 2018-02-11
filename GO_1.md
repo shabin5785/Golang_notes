@@ -215,7 +215,10 @@ values to the corresponding parameter variables; a return statement implicitly a
 return operands to the corresponding result var iables;
 
 **Variable Type**
-
+-The typ e of a var iable or expression defines the charac ter istics of the values it may take on,
+such as their size (number of bits or number of elements, perhaps), how they are represented
+internal ly, the intrinsic operat ions that can be per formed on them, and the methods associated
+with them.
 
 
 
