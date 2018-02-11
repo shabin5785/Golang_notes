@@ -288,6 +288,9 @@ gopl.io/ch2/tempconv by using a qualified identifier li ke tempconv.CToF. By def
 short name is the package name—tempconv in this cas e—but an import declarat ion may
 specif y an alternat ive name to avoid a conflic t
 
+-Package initializat ion beg ins by initializing package-le vel var iables in the order in which they
+are declared, except that dep endencies are res olved first.
+
 
 
 
