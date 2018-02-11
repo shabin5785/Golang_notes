@@ -333,6 +333,14 @@ entire enclosing function.
 -A program may contain multiple declarat ions of the same name so long as each declarat ion is
 in a different lexic al block.
 
+-When the compiler encounters a reference to a name, it looks for a declarat ion, starting with
+the inner most enclosing lexic al block and working up to the universe block. If the compiler
+finds no declarat ion, it rep orts an ‘‘unde clared name’’ er ror. If a name is declared in both an
+outer blo ck and an inner blo ck, the inner declarat ion will be found first. In that cas e, the
+inner declarat ion is said to **shadow or hide** the outer one, mak ing it inaccessible
+
+
+
 
 
 
