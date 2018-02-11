@@ -41,3 +41,10 @@ always the same as the sig n of the dividend, so -5%3 and -5%-3 are both 2.
 The behavior of / dep ends on whether its operands are integers, so 5.0/4.0 is 1.25, but 5/4 is 1 because integer
 division truncates the result toward zero.
 
+-If the result of an arithmetic operat ion, whether signed or unsig ned, has more bits than can be
+repres ented in the result typ e, it is said to **overflow**. The hig h-order bits that do not fit are
+si lently discarded
+
+-al l values of basic typ e—boole ans, numbers, and str ings—are comparable, meaning
+that two values of the same typ e may be compared using the == and != operators. Fur thermore,
+integers, floating-p oint numbers, and str ings are ordered by the comparison operators.
