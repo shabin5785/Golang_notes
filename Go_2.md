@@ -161,6 +161,17 @@ The unicode package provides functions like IsDigit, IsLetter, IsUpper, and IsLo
 classif ying runes. Each function takes a single rune argument and retur ns a boole an. Conversion
 functions like ToUpper and ToLower convert a rune into the given cas e if it is a letter.
 
+**Constants**
+-Constants are expressions whose value is known to the compiler and whose evaluation is guaranteed
+to occ ur at compile time, not at run time. The underlying typ e of every constant is a
+basic typ e: boole an, string, or number.
+
+-Many computations on constants can be completely evaluated at compile time, reducing the
+work necessary at run time and enabling other compiler optimizat ions. Errors ordinar ily
+detec ted at run time can be rep orted at compile time when their operands are constants, such
+as integer division by zero, str ing indexing out of bounds, and any floating-p oint operat ion
+that would result in a non-finite value.
+
 
 
 
