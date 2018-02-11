@@ -67,5 +67,16 @@ in which i == 0, the i-- statement would cause i to become not −1, but the max
 uint value (for example, 264−1), and the evaluation of medals[i] would fai l at run time, or
 panic (§5.9), by attempting to access an element outside the bounds of the slice.
 
+-Rune literals are written as a charac ter within single quotes. The simplest example is an ASCII
+charac ter like 'a', but it’s possible to write any Unico de co de point either direc tly or with
+numeric escap es, as we will see shortly.
+Runes are printed with %c, or with %q if quoting is desired:
+ascii := 'a'
+unicode := 'D'
+newline := '\n'
+fmt.Printf("%d %[1]c %[1]q\n", ascii) // "97 a 'a'"
+fmt.Printf("%d %[1]c %[1]q\n", unicode) // "22269 D 'D'"
+fmt.Printf("%d %[1]q\n", newline) // "10 '\n'"
+
 
 
