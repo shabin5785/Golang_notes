@@ -158,6 +158,18 @@ find all the statements that access a var iable, we have to know all its alias e
 that create ali ases; aliasing also occurs when we copy values of other reference typ es li ke
 slices, maps, and channels, and even str ucts, arrays, and interfaces that contain these typ es
 
+- flag type is used to read flags or command line args 
+
+**new Function**
+
+-Another way to create a var iable is to use the bui lt-in function new. The expression new(T)
+creates an unnamed variable of typ e T, initializes it to the zero value of T, and retur ns its
+address, which is a value of typ e *T.
+
+p := new(int) // p, of type *int, points to an unnamed int variable
+fmt.Println(*p) // "0"
+*p = 2 // sets the unnamed int to 2
+fmt.Println(*p) // "2"
 
 
 
