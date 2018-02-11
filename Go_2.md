@@ -151,6 +151,16 @@ Raw str ing literals are a convenient way to write regu lar expressions, which t
 backslashes. They are also useful for HTML templates, JSON literals, command usage messages,
 and the like, which often extend over multiple lines.
 
+-Four standard packages are par tic ularly important for manipulat ing str ings: bytes, strings,
+strconv, and unicode. The strings package provides many functions for searching, replacing,
+comparing, tr imming, splitting, and joining str ings.The bytes package has similar functions for manipulat ing slices of bytes, of typ e []byte, which share some properties with strings.
+The strconv package provides functions for converting boole an, integer, and floating-p oint
+values to and from their str ing representations, and functions for quoting and unquoting
+strings.
+The unicode package provides functions like IsDigit, IsLetter, IsUpper, and IsLower for
+classif ying runes. Each function takes a single rune argument and retur ns a boole an. Conversion
+functions like ToUpper and ToLower convert a rune into the given cas e if it is a letter.
+
 
 
 
