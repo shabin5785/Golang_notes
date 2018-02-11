@@ -141,7 +141,13 @@ to which p points is written *p. The expression *p yields the value of that var 
 int, but since *p denotes a var iable, it may also appear on the lef t-hand side of an assig nment,
 in which cas e the assig nment updates the var iable
 
--
+x := 1
+p := &x // p, of type *int, points to x
+fmt.Println(*p) // "1"
+*p = 2 // equivalent to x = 2
+fmt.Println(x) // "2"
+
+
 
 
 
