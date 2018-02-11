@@ -339,7 +339,15 @@ finds no declarat ion, it rep orts an ‘‘unde clared name’’ er ror. If a 
 outer blo ck and an inner blo ck, the inner declarat ion will be found first. In that cas e, the
 inner declarat ion is said to **shadow or hide** the outer one, mak ing it inaccessible
 
+-Within a function, lexical blo cks may be nested to arbitrar y depth, so one local declarat ion can
+shadow another. Most blo cks are created by control-flow constr ucts like if statements and
+for loops.
 
+-not all lexic al blocks correspond to explicit brace-delimited sequences of
+statements; some are merely implie d. The for lo op above creates two lexic al blocks: the
+explicit blo ck for the loop body, and an implicit blo ck that additionally enclos es the var iables
+de clared by the initializat ion clause, such as i. The scope of a var iable declared in the implicit
+block is the condition, post-statement (i++), and body of the for statement
 
 
 
