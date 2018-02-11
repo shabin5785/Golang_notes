@@ -239,7 +239,11 @@ Even thoug h both have the same underlying typ e, float64, they are not the same
 cannot be compared or combined in arithmetic expressions. Distinguishing the typ es makes it
 possible to avoid errors like inadver tently combining temperatures in the two dif ferent scales;
 
-
+-For ever y type T, there is a corresponding conversion operat ion T(x) that converts the value x
+to typ e T. A conversion from one type to another is allowed if both have the same underlying
+type, or if both are unnamed pointer typ es that point to var iables of the same underlying typ e;
+thes e conversions change the typ e but not the representation of the value. If x is assig nable to
+T, a conversion is per mitted but is usually redundant
 
 
 
