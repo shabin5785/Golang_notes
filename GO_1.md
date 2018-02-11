@@ -330,6 +330,9 @@ local, so they can be refer red to only from within the same function or perhaps
 -The scope of a control-flow lab el, as used by break, continue, and goto statements, is the
 entire enclosing function.
 
+-A program may contain multiple declarat ions of the same name so long as each declarat ion is
+in a different lexic al block.
+
 
 
 
