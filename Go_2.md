@@ -32,3 +32,12 @@ siblings. **Thus int is not the same typ e as int32, even if the natural size of
 and an explicit conversion is required to use an int value where an int32 is needed, and vice
 versa.
 
+-There are only five levels of precedence for binary operators. Operators at the same level asso
+ciate to the lef t, so parenthes es may be required for clarity, or to make the operators evaluate
+in the intended order
+
+-The behavior of % for negat ive numbers var ies across programming langu ages. In Go, the sig n of the remainder is
+always the same as the sig n of the dividend, so -5%3 and -5%-3 are both 2.
+The behavior of / dep ends on whether its operands are integers, so 5.0/4.0 is 1.25, but 5/4 is 1 because integer
+division truncates the result toward zero.
+
