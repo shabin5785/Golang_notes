@@ -226,6 +226,19 @@ type. The named typ e provides a way to sep arate dif ferent and perhaps incompa
 the underlying typ e so that they can’t be mixed unintentionally.
 type name underlyingtype
 
+type Celsius float64
+type Fahrenheit float64
+
+AbsoluteZeroC Celsius = 273.15
+FreezingC Celsius = 0
+
+func CToF(c Celsius) Fahrenheit { return Fahrenheit(c*9/5 + 32) }
+
+This package defines two typ es, Celsius and Fahrenheit, for the two units of temperature.
+Even thoug h both have the same underlying typ e, float64, they are not the same typ e, so they
+cannot be compared or combined in arithmetic expressions. Distinguishing the typ es makes it
+possible to avoid errors like inadver tently combining temperatures in the two dif ferent scales;
+
 
 
 
