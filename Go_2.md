@@ -222,5 +222,8 @@ behavior is dif ferent from languages that implicitly pass arrays by reference.O
 
 **Slices**
 
--
+-Slices represent var iable-lengt h sequences whose elements all have the same typ e. A slice typ e
+is written []T, where the elements have typ e T; it looks like an array typ e without a size.
+
+
 
