@@ -265,6 +265,14 @@ with maps, but the inconsistent treatment of slices and arrays by the == operato
 conf using. The safest choice is to disallow slice comparisons altogether.
 The only legal slice comparison is against nil,
 
--
+-The bui lt-in **append** function appends items to slices:
+The bui lt-in append function may use a more sophisticated growth strateg y than appendInt’s
+simplistic one. Usually we don’t know whether a given cal l to append wi l l cause a reallocat ion,
+so we can’t assume that the original slice refers to the same array as the resulting slice, nor that
+it refers to a dif ferent one. Simi larly, we must not assume that operat ions on elements of the
+old slice will (or will not) be reflec ted in the new slice. As a result, it’s usual to assig n the result
+of a cal l to append to the same slice variable whose value we passed to append:
+runes = append(runes, r)
+
 
 
