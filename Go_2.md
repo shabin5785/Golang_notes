@@ -214,3 +214,11 @@ q := [...]int{1, 2, 3}
 direc tly compare two arrays of that typ e using the == operator, which rep orts whether all corresponding
 elements are equal.
 
+-When a function is cal le d, a copy of each argument value is assig ned to the corresponding
+parameter variable, so the function receives a copy, not the original. Passing large arrays in
+this way can be inefficient, and any changes that the function makes to array elements affect
+only the copy, not the original. In this regard, Go treats arrays like any other typ e, but this
+behavior is dif ferent from languages that implicitly pass arrays by reference.Of course, we can explicitly pass a pointer to an array so that any modifications the function makes to array elements will be visible to the cal ler.
+
+-
+
