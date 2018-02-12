@@ -225,5 +225,13 @@ behavior is dif ferent from languages that implicitly pass arrays by reference.O
 -Slices represent var iable-lengt h sequences whose elements all have the same typ e. A slice typ e
 is written []T, where the elements have typ e T; it looks like an array typ e without a size.
 
+-Arrays and slices are intimately connected. A slice is a lig htweig ht dat a struc ture that gives
+access to a subsequence (or perhaps all) of the elements of an array, which is known as the
+slice’s underlying array. A slice has three components: a pointer, a lengt h, and a cap acity. The
+pointer points to the first element of the array that is reachable through the slice, which is not
+necessarily the array’s first element. The lengt h is the number of slice elements; it can’t exceed
+the cap acity, which is usually the number of elements bet ween the start of the slice and the end
+of the underlying array. The bui lt-in functions len and cap return thos e values.
+
 
 
