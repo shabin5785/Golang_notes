@@ -263,6 +263,8 @@ make slices unsuitable for use as map keys. For reference typ es li ke pointers 
 analogous ‘‘shallow’’ equality test for slices could be useful, and it would solve the problem
 with maps, but the inconsistent treatment of slices and arrays by the == operator would be
 conf using. The safest choice is to disallow slice comparisons altogether.
+The only legal slice comparison is against nil,
 
+-
 
 
