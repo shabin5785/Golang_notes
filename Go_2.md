@@ -246,5 +246,23 @@ literal lo oks like an array literal, a sequence of values sep arated by commas 
 braces, but the size is not given. This implicitly creates an array variable of the rig ht size and
 yields a slice that points to it
 
+-Unlike arrays, slices are not comparable, so we cannot use == to test whether two slices contain
+the same elements.
+
+
+-There are two reasons why deep equivalence is problemat ic. First, unlike array elements,
+the elements of a slice are indirec t, mak ing it possible for a slice to contain its elf.
+Although there are ways to deal with such cas es, none is simple, efficient, and most
+importantly, obvious.
+Second, because slice elements are indirec t, a fixed slice value may contain different elements
+at different times as the contents of the underlying array are modified. Because a hash table
+such as Go’s map typ e makes only shallow copies of its keys, it requires that equality for each
+key remain the same throughout the lifet ime of the hash table. Deep equivalence would thus
+make slices unsuitable for use as map keys. For reference typ es li ke pointers and channels, the
+== operator tests reference identity, that is, whether the two entities refer to the same thing. An
+analogous ‘‘shallow’’ equality test for slices could be useful, and it would solve the problem
+with maps, but the inconsistent treatment of slices and arrays by the == operator would be
+conf using. The safest choice is to disallow slice comparisons altogether.
+
 
 
