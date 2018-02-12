@@ -210,3 +210,7 @@ much more versatile,
 by the number of initializers.
 q := [...]int{1, 2, 3}
 
+-If an array’s element typ e is comparable then the array typ e is comparable too, so we may
+direc tly compare two arrays of that typ e using the == operator, which rep orts whether all corresponding
+elements are equal.
+
