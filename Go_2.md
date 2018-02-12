@@ -240,5 +240,11 @@ ar ray
 the function to modif y the underlying array elements. In other words, copying a slice creates
 an alias (§2.3.2) for the underlying array.
 
--
+-s := []int{0, 1, 2, 3, 4, 5}
+Notice how the expression that initializes the slice s dif fers from that for the array a. A slice
+literal lo oks like an array literal, a sequence of values sep arated by commas and sur rounded by
+braces, but the size is not given. This implicitly creates an array variable of the rig ht size and
+yields a slice that points to it
+
+
 
