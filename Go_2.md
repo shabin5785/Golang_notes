@@ -220,5 +220,7 @@ this way can be inefficient, and any changes that the function makes to array el
 only the copy, not the original. In this regard, Go treats arrays like any other typ e, but this
 behavior is dif ferent from languages that implicitly pass arrays by reference.Of course, we can explicitly pass a pointer to an array so that any modifications the function makes to array elements will be visible to the cal ler.
 
+**Slices**
+
 -
 
