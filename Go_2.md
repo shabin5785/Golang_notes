@@ -201,10 +201,8 @@ Saturday
 )
 This declares Sunday to be 0, Monday to be 1, and so on.
 
-
-
-
-
-
-
+**Arrays**
+-An array is a fixed-lengt h sequence of zero or more elements of a par tic ular typ e. Because of
+their fixed lengt h, ar rays are rarely used direc tly in Go. Slices, which can grow and shrink, are
+much more versatile,
 
