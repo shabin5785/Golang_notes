@@ -236,5 +236,9 @@ of the underlying array. The bui lt-in functions len and cap return thos e value
 -Multiple slices can share the same underlying array and may refer to overlapping par ts of that
 ar ray
 
+-Since a slice contains a pointer to an element of an array, passing a slice to a function per mits
+the function to modif y the underlying array elements. In other words, copying a slice creates
+an alias (§2.3.2) for the underlying array.
+
 -
 
