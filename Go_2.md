@@ -206,3 +206,7 @@ This declares Sunday to be 0, Monday to be 1, and so on.
 their fixed lengt h, ar rays are rarely used direc tly in Go. Slices, which can grow and shrink, are
 much more versatile,
 
+-In an array literal, if an ellipsis ‘‘...’’ appears in place of the lengt h, the array lengt h is determined
+by the number of initializers.
+q := [...]int{1, 2, 3}
+
