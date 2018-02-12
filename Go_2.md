@@ -233,5 +233,8 @@ necessarily the array’s first element. The lengt h is the number of slice elem
 the cap acity, which is usually the number of elements bet ween the start of the slice and the end
 of the underlying array. The bui lt-in functions len and cap return thos e values.
 
+-Multiple slices can share the same underlying array and may refer to overlapping par ts of that
+ar ray
 
+-
 
