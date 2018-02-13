@@ -346,6 +346,10 @@ wr ite a loop
 -Go does not provide a set type, but since the keys of a map are distinct, a map can ser ve this
 purpos e.
 
+**Structs**
+
+
+
 
 
 
