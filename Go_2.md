@@ -304,4 +304,10 @@ that isn’t present retur ns the zero value for its typ e, so, for instance, th
 when "bob" is not yet a key in the map because the value of ages["bob"] wi l l be 0.
 ages["bob"] = ages["bob"] + 1 // happy birthday!
 
+-The shorthand assig nment forms x += y and x++ also work for map elements, so we can rewr
+ite the statement above as
+ages["bob"] += 1
+or evenmore concisely as
+ages["bob"]++
+
 
