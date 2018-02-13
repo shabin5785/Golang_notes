@@ -310,4 +310,6 @@ ages["bob"] += 1
 or evenmore concisely as
 ages["bob"]++
 
+-But a map element is not a var iable, and we cannot take its address. One reason that we can’t take the address of a map element is that growing a map might cause rehashing of existing elements into new storage locat ions, thus potential ly invalid ating the address.
+
 
