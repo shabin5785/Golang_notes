@@ -295,4 +295,8 @@ ages := map[string]int{
 "charlie": 34,
 }
 
+- Map elements are accessed through the usual subscript notation:
+ages["alice"]  and removed with the bui lt-in function delete:
+delete(ages, "alice") // remove element ages["alice"]
 
+-
