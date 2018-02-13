@@ -386,6 +386,9 @@ anim := gif.GIF{LoopCount: nframes}
 If a field is omitted in this kind of literal, it is set to the zero value for its typ e. Because names
 are provide d, the order of fields doesn’t matter.
 
+-Struc t values can be passed as arguments to functions and retur ned from them. For efficiency, larger str uct typ es are usually passed to or retur ned from functions indirec tly using a pointer,
+
+
 
 
 
