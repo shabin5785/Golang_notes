@@ -329,3 +329,6 @@ for _, name := range ages {
 - Most operat ions on maps, including lookup, delete, len, and range lo ops, are safe to perform
 on a nil map reference, since it behaves like an empty map. But storing to a nil map
 causes a panic:
+
+- Accessing a map element by subscripting always yields a value. If the key is present in the
+map, you get the corresponding value; if not, you get the zero value for the element typ e,
