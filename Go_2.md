@@ -274,5 +274,16 @@ old slice will (or will not) be reflec ted in the new slice. As a result, it’s
 of a cal l to append to the same slice variable whose value we passed to append:
 runes = append(runes, r)
 
+**Maps**
+
+-The hash table is one of the most ingenious and versatile of all dat a struc tures. It is an
+unordered collec tion of key/value pairs in which all the keys are distinct, and the value asso ciated
+with a given key can be ret rie ved, updated, or removed using a constant number of key
+comparisons on the average, no matter how large the hash table.
+In Go, a map is a reference to a hash table, and a map typ e is written map[K]V, where K and V
+are the typ es of its keys and values. All of the keys in a given map are of the same typ e, and all
+of the values are of the same typ e, but the keys need not be of the same typ e as the values. The
+key type K must be comparable using ==, so that the map can test whether a given key is equal
+to one already within it.
 
 
