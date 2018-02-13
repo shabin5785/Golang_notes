@@ -286,4 +286,13 @@ of the values are of the same typ e, but the keys need not be of the same typ e 
 key type K must be comparable using ==, so that the map can test whether a given key is equal
 to one already within it.
 
+-The bui lt-in function make can be used to create a map:
+ages := make(map[string]int) // mapping from strings to ints
+
+-We can also use a map literal to create a new map populated with some initial key/value pairs:
+ages := map[string]int{
+"alice": 31,
+"charlie": 34,
+}
+
 
