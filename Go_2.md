@@ -395,8 +395,6 @@ It is exac tly equivalent to
 pp := new(Point)
 *pp = Point{1, 2}
 
-**JSON**
-
 
 
 
