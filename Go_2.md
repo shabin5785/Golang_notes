@@ -343,7 +343,8 @@ immediately used in an if condition
 To test whether two maps contain the same keys and the same associ ated values, we must
 wr ite a loop
 
-
+-Go does not provide a set type, but since the keys of a map are distinct, a map can ser ve this
+purpos e.
 
 
 
