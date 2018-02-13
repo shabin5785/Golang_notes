@@ -348,7 +348,12 @@ purpos e.
 
 **Structs**
 
-
+-A struct is an aggregate dat a type that groups toget her zero or more named values of arbitrar y
+types as a single entity. Each value is cal le d a field. The classic example of a str uct from data
+processing is the employee record, whose fields are a unique ID, the employee’s name, address,
+date of bir th, position, sal ary, manager, and the like. All of these fields are collec ted into a single
+entity that can be copie d as a unit, passed to functions and retur ned by them, stored in
+ar rays, and so on.
 
 
 
