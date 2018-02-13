@@ -355,6 +355,11 @@ date of bir th, position, sal ary, manager, and the like. All of these fields ar
 entity that can be copie d as a unit, passed to functions and retur ned by them, stored in
 ar rays, and so on.
 
+-type Employee struct { }
+var dilbert Employee
+
+
+
 
 
 
