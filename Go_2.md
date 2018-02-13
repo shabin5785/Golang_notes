@@ -379,6 +379,13 @@ left, right *tree
 type Point struct{ X, Y int }
 p := Point{1, 2}
 
+-More often, the second form is used, in which a str uct value is initialize d by listing some or all
+of the field names and their corresponding values, as in this statement from the Lissajous
+prog ram of Sec tion 1.4:
+anim := gif.GIF{LoopCount: nframes}
+If a field is omitted in this kind of literal, it is set to the zero value for its typ e. Because names
+are provide d, the order of fields doesn’t matter.
+
 
 
 
