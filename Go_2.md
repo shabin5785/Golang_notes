@@ -312,4 +312,18 @@ ages["bob"]++
 
 -But a map element is not a var iable, and we cannot take its address. One reason that we can’t take the address of a map element is that growing a map might cause rehashing of existing elements into new storage locat ions, thus potential ly invalid ating the address.
 
+-To enumerate all the key/value pairs in the map, we use a range-b ased for lo op simi lar to
+thos e we saw for slices
+for name, age := range ages {
+fmt.Printf("%s\t%d\n", name, age)
+}
+
+- in a for loop if we want to ignore the second element, we can just leave it empty, but for first element, we need to put _
+for name := range ages {
+
+}
+for _, name := range ages {
+
+}
+
 
