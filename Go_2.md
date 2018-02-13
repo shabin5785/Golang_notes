@@ -358,6 +358,15 @@ ar rays, and so on.
 -type Employee struct { }
 var dilbert Employee
 
+Because dilbert is a var iable, its fields are var iables too and we can take its address and access it through a pointer:
+
+-Field order is sig nificant to typ e identity. Had we also combined the declarat ion of the Position
+field (also a str ing), or interchanged Name and Address, we would be defining a dif ferent
+struc t type.
+
+-The name of a str uct field is exp orted if it beg ins with a capital letter; this is Go’s main access
+control mechanism. A struc t type may contain a mixture of exp orted and unexp orted fields.
+
 
 
 
