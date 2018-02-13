@@ -375,6 +375,10 @@ value int
 left, right *tree
 }
 
+-A value of a str uct typ e can be written using a struct literal that specifies values for its fields.
+type Point struct{ X, Y int }
+p := Point{1, 2}
+
 
 
 
