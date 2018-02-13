@@ -299,4 +299,9 @@ ages := map[string]int{
 ages["alice"]  and removed with the bui lt-in function delete:
 delete(ages, "alice") // remove element ages["alice"]
 
--
+-Al l of these operat ions are safe even if the element isn’t in the map; a map lookup using a key
+that isn’t present retur ns the zero value for its typ e, so, for instance, the following works even
+when "bob" is not yet a key in the map because the value of ages["bob"] wi l l be 0.
+ages["bob"] = ages["bob"] + 1 // happy birthday!
+
+
