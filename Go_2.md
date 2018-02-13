@@ -335,7 +335,9 @@ map, you get the corresponding value; if not, you get the zero value for the ele
 For example, if the element typ e is numer ic, you mig ht have to distinguish bet ween a nonexistent element and an element that happens to have the value zero, using a test like this:
 age, ok := ages["bob"]
 if !ok { /* "bob" is not a key in this map; age == 0. */ }
-
+Subscripting a map in this context yields two values; the second is a boole an that rep orts
+whet her the element was present. The boole an var iable is often cal le d ok, especi ally if it is
+immediately used in an if condition
 
 
 
