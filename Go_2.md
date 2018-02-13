@@ -332,3 +332,11 @@ causes a panic:
 
 - Accessing a map element by subscripting always yields a value. If the key is present in the
 map, you get the corresponding value; if not, you get the zero value for the element typ e,
+For example, if the element typ e is numer ic, you mig ht have to distinguish bet ween a nonexistent element and an element that happens to have the value zero, using a test like this:
+age, ok := ages["bob"]
+if !ok { /* "bob" is not a key in this map; age == 0. */ }
+
+
+
+
+
