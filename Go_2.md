@@ -367,6 +367,14 @@ struc t type.
 -The name of a str uct field is exp orted if it beg ins with a capital letter; this is Go’s main access
 control mechanism. A struc t type may contain a mixture of exp orted and unexp orted fields.
 
+-A named str uct typ e S can’t declare a field of the same typ e S: an aggregate value cannot contain
+its elf. (An analogous restric tion applies to arrays.) But S may declare a field of the
+pointer typ e *S, which lets us create rec ursive dat a struc tures like lin ked lists and trees.
+type tree struct {
+value int
+left, right *tree
+}
+
 
 
 
