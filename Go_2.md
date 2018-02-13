@@ -388,6 +388,13 @@ are provide d, the order of fields doesn’t matter.
 
 -Struc t values can be passed as arguments to functions and retur ned from them. For efficiency, larger str uct typ es are usually passed to or retur ned from functions indirec tly using a pointer,
 
+-Because struc ts are so commonly dealt with through pointers, it’s possible to use this
+shorthand notation to create and initialize a struct var iable and obtain its address:
+pp := &Point{1, 2}
+It is exac tly equivalent to
+pp := new(Point)
+*pp = Point{1, 2}
+
 
 
 
