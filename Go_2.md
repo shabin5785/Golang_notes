@@ -339,7 +339,11 @@ Subscripting a map in this context yields two values; the second is a boole an t
 whet her the element was present. The boole an var iable is often cal le d ok, especi ally if it is
 immediately used in an if condition
 
--
+-As with slices, maps cannot be compared to each other ; the only legal comparison is with nil.
+To test whether two maps contain the same keys and the same associ ated values, we must
+wr ite a loop
+
+
 
 
 
