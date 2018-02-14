@@ -55,3 +55,6 @@ ig nored. However, a few functions may retur n partial results in error cases
 respond to errors. This sty le undeni ably demands that more attention be paid to error-handling
 log ic, but that is precisely the point.
 
+-When a function cal l returns an error, it’s the cal ler’s responsibility to check it and take
+appropriate action
+
