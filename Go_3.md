@@ -91,6 +91,9 @@ is cal le d an **anonymous function**.
 
 strings.Map(func(r rune) rune { return r + 1 }, "HAL9000")
 
+More importantly, functions defined in this way have access to the entire lexic al environment,
+so the inner function can refer to var iables from the enclosing function,
+
 
 
 
