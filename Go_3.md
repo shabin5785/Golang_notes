@@ -67,6 +67,9 @@ unpredic table problems, it may make sense to retry the fai le d operat ion, pos
 between tries, and perhaps with a limit on the number of attempts or the time spent trying
 before giving up entirely.
 
+Third, if progress is impossible, the cal ler can print the error and stop the program gracef ully,
+but this course of action should general ly be res erved for the main package of a program.
+
 
 
 
