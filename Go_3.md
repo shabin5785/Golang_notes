@@ -84,6 +84,11 @@ The cal ler can detec t this condition using a simple comparison,
 may be assig ned to var iables or passed to or retur ned from functions. A function value may
 be cal le d li ke any other function
 
+-Named functions can be declared only at the package level, but we can use a function literal to
+denote a function value within any expression. A function literal is written like a function
+de clarat ion, but without a name following the func keyword. It is an expression, and its value
+is cal le d an **anonymous function**.
+
 
 
 
