@@ -58,3 +58,10 @@ log ic, but that is precisely the point.
 -When a function cal l returns an error, it’s the cal ler’s responsibility to check it and take
 appropriate action
 
+- Ways to handle errors
+First, and most common, is to propagate the error, so that a fai lure in a subroutine becomes a
+fai lure of the cal ling routine.Because er ror messages are frequently chained toget her, message str ings should not be capitalize d and newlines should be avoide d. The resulting errors may be long, but they wi l l be selfcontained when found by tools like grep.
+
+
+
+
