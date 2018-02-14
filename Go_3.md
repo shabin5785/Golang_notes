@@ -94,6 +94,8 @@ strings.Map(func(r rune) rune { return r + 1 }, "HAL9000")
 More importantly, functions defined in this way have access to the entire lexic al environment,
 so the inner function can refer to var iables from the enclosing function,
 
-
+-A **variadic function** is one that can be cal le d with var ying numbers of arguments. The most
+fami liar examples are fmt.Printf and its variants. Printf requires one fixed argument at the
+beginning, then accepts any number of subsequent arguments.
 
 
