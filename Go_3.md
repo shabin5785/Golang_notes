@@ -97,5 +97,6 @@ so the inner function can refer to var iables from the enclosing function,
 -A **variadic function** is one that can be cal le d with var ying numbers of arguments. The most
 fami liar examples are fmt.Printf and its variants. Printf requires one fixed argument at the
 beginning, then accepts any number of subsequent arguments.
-
+To declare a var iadic function, the typ e of the final parameter is preceded by an ellipsis, ‘‘...’’,
+which indic ates that the functionmay be cal le d with any number of arguments of this typ e.
 
