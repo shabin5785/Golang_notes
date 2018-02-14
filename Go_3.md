@@ -37,5 +37,16 @@ links, err := findLinks(url)
 -In a function with named results, the operands of a retur n statement may be omitted. This is
 called a **bare return.**
 
--
+-A function for which fai lure is an exp ected behavior retur ns an additional result, conventional
+ly the last one. If the fai lure has only one possible cause, the result is a boole an, usually
+called ok, as in this example of a cache lookup that always succe e ds unless there was no entry
+for that key :
+value, ok := cache.Lookup(key)
+if !ok {
+// ...cache[key] does not exist...
+}
+More often, and especi ally for I/O, the fai lure may have a var iety of causes for which the cal ler
+wi l l need an explanation. In such cas es, the typ e of the additional result is error.
+
+
 
