@@ -62,6 +62,11 @@ appropriate action
 First, and most common, is to propagate the error, so that a fai lure in a subroutine becomes a
 fai lure of the cal ling routine.Because er ror messages are frequently chained toget her, message str ings should not be capitalize d and newlines should be avoide d. The resulting errors may be long, but they wi l l be selfcontained when found by tools like grep.
 
+For errors that represent transient or
+unpredic table problems, it may make sense to retry the fai le d operat ion, possibly with a delay
+between tries, and perhaps with a limit on the number of attempts or the time spent trying
+before giving up entirely.
+
 
 
 
