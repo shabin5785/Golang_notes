@@ -70,6 +70,9 @@ before giving up entirely.
 Third, if progress is impossible, the cal ler can print the error and stop the program gracef ully,
 but this course of action should general ly be res erved for the main package of a program.
 
+Fourth, in some cases, it’s sufficient just to log the error and then continue, perhaps with
+reduce d functionality
+
 
 
 
