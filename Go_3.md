@@ -112,5 +112,17 @@ t, or lock and unlock to ensure that res ources are released in all cas es, no m
 complex the control flow. The rig ht place for a defer statement that releases a res ource is
 immediately after the res ource has been successf ully acquired.
 
+-Go’s typ e system catches many mistakes at compile time, but others, like an out-of-b ounds
+ar ray access or nil pointer dereference, require checks at run time. When the Go runtime
+detec ts these mistakes, it **panics**
+
+-During a typic al panic, normal exec ution stops, all defer red function cal ls in that goroutine are
+exec uted, and the program crashes with a log message. This log message includes the panic
+value, which is usually an error message of some sort, and, for each goroutine, a stack trace
+showing the stack of function cal ls that were active at the time of the panic. This log message
+often has enough informat ion to diagnos e the root cause of the problem without running the
+prog ram again, so it should always be include d in a bug rep ort about a panicking program.
+
+.
 
 
