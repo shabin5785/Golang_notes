@@ -75,6 +75,11 @@ reduce d functionality
 
 And fifth and finally, in rare cas es we can safely ignore an error entirely:
 
-- 
+- the io package guarantees that any read fai lure caused by an end-of-file condition
+is always rep orted by a distinguished er ror, io.EOF, which is defined as
+var EOF = errors.New("EOF")
+The cal ler can detec t this condition using a simple comparison,
+
+
 
 
