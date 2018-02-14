@@ -34,5 +34,8 @@ modifications the functionmakes to var iables indirectly referred to by the argu
 must explicitly assig n the values to var iables if any of them are to be used:
 links, err := findLinks(url)
 
+-In a function with named results, the operands of a retur n statement may be omitted. This is
+called a **bare return.**
 
+-
 
