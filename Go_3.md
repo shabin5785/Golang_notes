@@ -23,5 +23,10 @@ parameters were declared. **Go has no concept of defau lt parameter values**, no
 specif y arguments by name, so the names of parameters and results don’t matter to the cal ler
 except as documentation.
 
+-**Arguments are passed by value**, so the function receives a copy of each argument; modifications
+to the copy do not affec t the cal ler. However, if the argument contains some kind of reference,
+like a pointer, slice, map, function, or channel, then the cal ler may be affec ted by any
+modifications the functionmakes to var iables indirectly referred to by the argument.
 
+-
 
