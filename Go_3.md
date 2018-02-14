@@ -89,6 +89,8 @@ denote a function value within any expression. A function literal is written lik
 de clarat ion, but without a name following the func keyword. It is an expression, and its value
 is cal le d an **anonymous function**.
 
+strings.Map(func(r rune) rune { return r + 1 }, "HAL9000")
+
 
 
 
