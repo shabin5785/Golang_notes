@@ -15,7 +15,13 @@ or an infinite for lo op with no break.
 
 -Two functions have the same typ e or
 sig nature if they have the same sequence of parameter typ es and the same sequence of result
-types. The names of parameters and results don’t affec t the typ e, nor does whether or not they
+types. The names of parameters and results don’t affec -t the typ e, nor does whether or not they
 were declared using the fac tored form.
+
+-Every function cal l must provide an argument for each parameter, in the order in which the
+parameters were declared. **Go has no concept of defau lt parameter values**, nor any way to
+specif y arguments by name, so the names of parameters and results don’t matter to the cal ler
+except as documentation.
+
 
 
