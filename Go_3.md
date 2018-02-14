@@ -127,6 +127,13 @@ prog ram again, so it should always be include d in a bug rep ort about a panick
 accepts any value as an argument. A panic is often the best thing to do when some ‘‘impossible’’
 situation happens, for instance, execution reaches a cas e that logic ally can’t happen.
 
+-Although Go’s panic mechanism res embles exceptions in other langu ages, the situat ions in
+which panic is used are quite dif ferent. Since a panic causes the program to crash, it is general
+ly used for grave errors, such as a log ical inconsistency in the program; diligent programmers
+consider any crash to be proof of a bug in their code. In a robust program, ‘‘exp ected’’
+er rors, the kind that arise from incorrec t input, misconfigurat ion, or fai ling I/O, should be
+handled gracef ully; they are best dealt with using error values.
+
 
 
 
