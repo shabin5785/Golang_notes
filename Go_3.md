@@ -13,4 +13,9 @@ A function that has a result list must end with a return statement unless execut
 cannot reach the end of the function, perhaps because the function ends with a cal l to panic
 or an infinite for lo op with no break.
 
--
+-Two functions have the same typ e or
+sig nature if they have the same sequence of parameter typ es and the same sequence of result
+types. The names of parameters and results don’t affec t the typ e, nor does whether or not they
+were declared using the fac tored form.
+
+
