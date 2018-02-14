@@ -134,6 +134,11 @@ consider any crash to be proof of a bug in their code. In a robust program, â€˜â
 er rors, the kind that arise from incorrec t input, misconfigurat ion, or fai ling I/O, should be
 handled gracef ully; they are best dealt with using error values.
 
+-If the bui lt-in recover function is cal le d within a defer red function and the function containing
+the defer statement is panicking, recover ends the cur rent state of panic and retur ns the
+panic value. The function that was panicking does not continue where it lef t off but retur ns
+normal ly. If recover is cal le d at any other time, it has no effec t and retur ns nil.
+
 
 
 
