@@ -73,6 +73,8 @@ but this course of action should general ly be res erved for the main package of
 Fourth, in some cases, it’s sufficient just to log the error and then continue, perhaps with
 reduce d functionality
 
+And fifth and finally, in rare cas es we can safely ignore an error entirely:
+
 
 
 
