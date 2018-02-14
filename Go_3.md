@@ -100,3 +100,17 @@ beginning, then accepts any number of subsequent arguments.
 To declare a var iadic function, the typ e of the final parameter is preceded by an ellipsis, ‘‘...’’,
 which indic ates that the functionmay be cal le d with any number of arguments of this typ e.
 
+-Syntactic ally, a **defer statement** is an ordinar y function or met hod cal l prefixed by the
+keyword defer. The function and argument expressions are evaluated when the statement is
+exec uted, but the actual cal l is deferred until the function that contains the defer statement
+has finished, whether normal ly, by executing a retur n statement or fal ling off the end, or
+abnormal ly, by panicking. Any number of cal ls may be defer red; they are executed in the
+reverse of the order in which they were defer red.
+
+A defer statement is often used with paired operat ions like open and clos e, connect and disconnec
+t, or lock and unlock to ensure that res ources are released in all cas es, no matter how
+complex the control flow. The rig ht place for a defer statement that releases a res ource is
+immediately after the res ource has been successf ully acquired.
+
+
+
