@@ -28,5 +28,5 @@ to the copy do not affec t the cal ler. However, if the argument contains some k
 like a pointer, slice, map, function, or channel, then the cal ler may be affec ted by any
 modifications the functionmakes to var iables indirectly referred to by the argument.
 
--
+-A function can retur n more than one result.
 
