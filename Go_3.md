@@ -80,6 +80,10 @@ is always rep orted by a distinguished er ror, io.EOF, which is defined as
 var EOF = errors.New("EOF")
 The cal ler can detec t this condition using a simple comparison,
 
+-Functions are **first-class values in Go**: like other values, function values have typ es, and they
+may be assig ned to var iables or passed to or retur ned from functions. A function value may
+be cal le d li ke any other function
+
 
 
 
