@@ -48,5 +48,6 @@ if !ok {
 More often, and especi ally for I/O, the fai lure may have a var iety of causes for which the cal ler
 wi l l need an explanation. In such cas es, the typ e of the additional result is error.
 
-
+-Usual ly when a function retur ns a non-ni l er ror, its other results are undefined and should be
+ig nored. However, a few functions may retur n partial results in error cases
 
