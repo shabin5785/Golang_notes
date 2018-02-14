@@ -51,3 +51,7 @@ wi l l need an explanation. In such cas es, the typ e of the additional result i
 -Usual ly when a function retur ns a non-ni l er ror, its other results are undefined and should be
 ig nored. However, a few functions may retur n partial results in error cases
 
+-Go programs use ordinar y control-flow mechanisms like if and return to
+respond to errors. This sty le undeni ably demands that more attention be paid to error-handling
+log ic, but that is precisely the point.
+
