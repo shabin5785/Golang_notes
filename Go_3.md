@@ -123,6 +123,10 @@ showing the stack of function cal ls that were active at the time of the panic. 
 often has enough informat ion to diagnos e the root cause of the problem without running the
 prog ram again, so it should always be include d in a bug rep ort about a panicking program.
 
-.
+-Not al l panics come from the runtime. The bui lt-in panic function may be cal le d direc tly ; it
+accepts any value as an argument. A panic is often the best thing to do when some ‘‘impossible’’
+situation happens, for instance, execution reaches a cas e that logic ally can’t happen.
+
+
 
 
