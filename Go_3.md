@@ -340,6 +340,14 @@ package, not the typ e as in many other langu ages. The fields of a str uct typ 
 co de within the same package. Whether the code appears in a function or a met hod makes no
 dif ference.
 
+-Encapsulat ion provides three benefits. First, because clients cannot direc tly modif y the
+objec t’s var iables, one need inspec t fewer statements to understand the possible values of those
+var iables.
+Second, hiding implementation det ails prevents clients from dep ending on things that mig ht
+change, which gives the desig ner greater freedom to evolve the implementation without breaking
+API compatibility
+
+
 
 
 
