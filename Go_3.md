@@ -203,5 +203,7 @@ an interface.
 	p.Y *= factor
 }
 
+This is a method with a pointer receiver
+
 
 
