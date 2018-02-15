@@ -161,5 +161,10 @@ func (p Point) Distance(q Point) float64 {
 	return math.Hypot(q.Xp.X, q.Yp.Y)
 }
 
-
+-The ext ra parameter p is cal le d the met hod’s receiver, a legac y from early object-oriented langu
+ages that des cribed cal ling a met hod as ‘‘sending a message to an object.’’
+In Go, we don’t use a speci al name like this or self for the receiver; we choose receiver
+names just as we would for any other parameter. Since the receiver name will be frequently
+used, it’s a good ide a to choose something short and to be consistent across met hods. A common
+choice is the first letter of the typ e name, like p for Point
 
