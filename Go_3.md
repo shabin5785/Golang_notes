@@ -140,5 +140,6 @@ panic value. The function that was panicking does not continue where it lef t of
 normal ly. If recover is cal le d at any other time, it has no effec t and retur ns nil.
 
 
+**Methods**
 
 
