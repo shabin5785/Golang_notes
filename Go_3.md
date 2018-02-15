@@ -180,3 +180,11 @@ fmt.Println(p.Distance(q)) // "5", method call
 de clares a package-le vel function. The second de clares a met hod
 of the typ e Point, so its name is Point.Distance.
 
+-The expression p.Distance is cal le d a selector, because it selec ts the appropriate Distance
+method for the receiver p of typ e Point. Selec tors are also used to selec t fields of str uct typ es,
+as in p.X. Since met hods and fields inhabit the same name space, declaring a met hod X on the
+struc t type Point would be ambiguous and the compiler will rej e ct it.
+So we cannot define a function name X if there is a variable named X inside a struct
+
+
+
