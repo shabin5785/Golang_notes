@@ -237,6 +237,8 @@ including str uct fields like p.X and array or slice elements like perim[0]. We 
 *Point method on a non-addressable Point receiver, because there’s no way to obtain the
 address of a temporar y value.
 
+Point{1, 2}.ScaleBy(2) // compile error: can't take address of Point literal
+
 
 
 
