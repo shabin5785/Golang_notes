@@ -312,6 +312,15 @@ an ordinar y function, we must supply the receiver in a speci al way using the s
 method expression, written T.f or (*T).f where T is a typ e, yields a function value with a regular
 first parameter tak ing the place of the receiver, so it can be cal le d in the usual way.
 
+p := Point{1, 2}
+q := Point{4, 6}
+distance := Point.Distance // method expression
+fmt.Println(distance(p, q)) // "5"
+fmt.Printf("%T\n", distance) // "func(Point, Point) float64"
+scale := (*Point).ScaleBy
+scale(&p, 2)
+fmt.Println(p) // "{2 4}"
+fmt.Printf("%T\n", scale) // "func(*Point, float64)"
 
 
 
