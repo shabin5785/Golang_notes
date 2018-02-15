@@ -212,5 +212,8 @@ then all methods of Point should have a pointer receiver, even ones that don’t
 receiver declarat ion. Fur thermore, to avoid ambiguities, met hod declarat ions are not per mitted
 on named typ es that are themselves pointer typ es:
 
+type P *int
+func (P) f() { /* ... */ } // compile error: invalid receiver type
+
 
 
