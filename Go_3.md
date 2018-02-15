@@ -198,5 +198,10 @@ an interface.
 
 -the compiler deter mines which function to cal l based on both the met hod name and the typ e of the receiver
 
+-func (p *Point) ScaleBy(factor float64) {
+	p.X *= factor
+	p.Y *= factor
+}
+
 
 
