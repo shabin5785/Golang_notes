@@ -351,7 +351,9 @@ clients from setting an object’s var iables arbitrar ily. Because the object�
 only by functions in the same package, the author of that package can ensure that all those
 functions maintain the object’s internal invar iants.
 
-
+-Functions that merely access or modif y internal values of a typ e, such as the methods of the
+Logger type from log package, below, are cal le d getters and setters. However, when naming a
+getter met hod, we usually omit the Get prefix.
 
 
 
