@@ -239,6 +239,12 @@ address of a temporar y value.
 
 Point{1, 2}.ScaleBy(2) // compile error: can't take address of Point literal
 
+But we can call a Point method like Point.Distance with a *Point receiver, because there is
+a way to obtain the value from the address: just load the value pointed to by the receiver. The
+compiler inserts an implicit * operat ion for us. Thes e two function cal ls are equivalent:
+pptr.Distance(q)
+(*pptr).Distance(q)
+
 
 
 
