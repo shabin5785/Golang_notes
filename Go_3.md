@@ -168,3 +168,8 @@ names just as we would for any other parameter. Since the receiver name will be 
 used, it’s a good ide a to choose something short and to be consistent across met hods. A common
 choice is the first letter of the typ e name, like p for Point
 
+-In a met hod cal l, the receiver argument appears before the method name. This paral lels the
+de clarat ion, in which the receiver parameter appears before the method name.
+
+
+
