@@ -147,4 +147,19 @@ asso ciated with a par tic ular typ e. An object-oriented prog ram is one that u
 express the proper ties and operat ions of each dat a struc ture so that clients need not access the
 objec t’s representation direc tly.
 
+-A met hod is declared with a var iant of the ordinar y function declarat ion in which an ext ra
+parameter appears before the function name. The parameter attaches the function to the typ e
+of that parameter.
+
+type Point struct{ X, Y float64 }
+// traditional function
+func Distance(p, q Point) float64 {
+	return math.Hypot(q.Xp.X, q.Yp.Y)
+}
+// same thing, but as a method of the Point type
+func (p Point) Distance(q Point) float64 {
+	return math.Hypot(q.Xp.X, q.Yp.Y)
+}
+
+
 
