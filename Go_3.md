@@ -280,6 +280,8 @@ fmt.Println(cp.Point.X) // "1"
 cp.Point.Y = 2
 fmt.Println(cp.Y) // "2"
 
-
+-A simi lar mechanism applies to the methods of Point. We can cal l methods of the embedde d
+Point field using a receiver of typ e ColoredPoint, even thoug h ColoredPoint has no
+de clared methods
 
 
