@@ -346,6 +346,11 @@ var iables.
 Second, hiding implementation det ails prevents clients from dep ending on things that mig ht
 change, which gives the desig ner greater freedom to evolve the implementation without breaking
 API compatibility
+The third benefit of encapsulat ion, and in many cas es the most important, is that it prevents
+clients from setting an object’s var iables arbitrar ily. Because the object’s var iables can be set
+only by functions in the same package, the author of that package can ensure that all those
+functions maintain the object’s internal invar iants.
+
 
 
 
