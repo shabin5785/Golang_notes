@@ -355,6 +355,11 @@ functions maintain the object’s internal invar iants.
 Logger type from log package, below, are cal le d getters and setters. However, when naming a
 getter met hod, we usually omit the Get prefix.
 
+-Go sty le does not forbid exp orted fields. Of course, once exp orted, a field cannot be unexported
+without an incompatible change to the API, so the initial choice should be deliberate
+and should consider the complexity of the invar iants that must be maintained, the likelihood
+of future changes, and the quantity of client code that would be affec ted by a change.
+
 
 
 
