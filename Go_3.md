@@ -272,8 +272,13 @@ Color color.RGBA
 We could have defined ColoredPoint as a str uct of three fields, but instead we embedded a
 Point to provide the X and Y fields
 
-embedding lets us take a  shortcut to defining a ColoredPoint that contains all the fields of Point, plus some
+-embedding lets us take a  shortcut to defining a ColoredPoint that contains all the fields of Point, plus some
 more. If we want, we can selec t the fields of ColoredPoint that were contr ibuted by the embedde d Point without mentioning Point:
+
+cp.X = 1
+fmt.Println(cp.Point.X) // "1"
+cp.Point.Y = 2
+fmt.Println(cp.Y) // "2"
 
 
 
