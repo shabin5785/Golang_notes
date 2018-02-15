@@ -335,6 +335,11 @@ same mechanism that limits access to members of a package also limits access to 
 struc t or the methods of a typ e. As a consequence, to encapsulate an object, we must make it a
 struc t.
 
+-Another consequence of this name-b ased mechanism is that the unit of encapsulat ion is the
+package, not the typ e as in many other langu ages. The fields of a str uct typ e are visible to all
+co de within the same package. Whether the code appears in a function or a met hod makes no
+dif ference.
+
 
 
 
