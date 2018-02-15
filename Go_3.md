@@ -196,5 +196,7 @@ str ings, slices, maps, and sometimes even functions. Met hods may be declared o
 named type defined in the same package, so long as its underlying typ e is neither a pointer nor
 an interface.
 
+-the compiler deter mines which function to cal l based on both the met hod name and the typ e of the receiver
+
 
 
