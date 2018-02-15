@@ -229,5 +229,10 @@ or this:
 	(&p).ScaleBy(2)
 	fmt.Println(p) // "{2, 4}"
     
-
+-But the last two cas es are ungain ly. Fortunately, the langu age helps us here. If the receiver p is
+a variable of typ e Point but the method requires a *Point receiver, we can use this shorthand:
+p.ScaleBy(2)
+and the compiler will per form an implicit &p on the var iable. This works only for var iables,
+including str uct fields like p.X and array or slice elements like perim[0]. We cannot cal l a
+*Point method on a non-addressable Point receiver, because there’s no way to obtain the
 
