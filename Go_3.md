@@ -325,5 +325,10 @@ fmt.Printf("%T\n", scale) // "func(*Point, float64)"
 Method expressions can be helpful when you need a value to represent a choice among several
 methods belonging to the same typ e so that you can cal l the chosen met hod with many dif ferent receivers
 
+-A var iable or met hod of an object is said to be **encapsulated** if it is inaccessible to clients of the
+objec t. Encapsulat ion, sometimes cal le d information hiding, is a key aspect of object-oriented
+programming.
+
+
 
 
