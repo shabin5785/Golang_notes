@@ -235,4 +235,6 @@ p.ScaleBy(2)
 and the compiler will per form an implicit &p on the var iable. This works only for var iables,
 including str uct fields like p.X and array or slice elements like perim[0]. We cannot cal l a
 *Point method on a non-addressable Point receiver, because there’s no way to obtain the
+address of a temporar y value.
+
 
