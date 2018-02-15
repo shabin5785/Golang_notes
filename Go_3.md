@@ -142,4 +142,9 @@ normal ly. If recover is cal le d at any other time, it has no effec t and retur
 
 **Methods**
 
--
+-an object is simply a value or var iable that has **methods**, and a method is a function
+asso ciated with a par tic ular typ e. An object-oriented prog ram is one that uses met hods to
+express the proper ties and operat ions of each dat a struc ture so that clients need not access the
+objec t’s representation direc tly.
+
+
