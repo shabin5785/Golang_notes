@@ -186,5 +186,15 @@ as in p.X. Since met hods and fields inhabit the same name space, declaring a me
 struc t type Point would be ambiguous and the compiler will rej e ct it.
 So we cannot define a function name X if there is a variable named X inside a struct
 
+-type Path []Point
+func (path Path) Distance() float64 {}
+
+Path is a named slice typ e, not a str uct typ e li ke Point, yet we can still define methods for it.
+In allowing met hods to be associ ated with any typ e, Go is unlike many other object-oriented
+languages. It is often convenient to define additional behaviors for simple typ es such as numbers,
+str ings, slices, maps, and sometimes even functions. Met hods may be declared on any
+named type defined in the same package, so long as its underlying typ e is neither a pointer nor
+an interface.
+
 
 
