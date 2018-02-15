@@ -304,6 +304,9 @@ scaleP(2) // p becomes (2, 4)
 scaleP(3) // then (6, 12)
 scaleP(10) // then (60, 120)
 
+-Method values are useful when a package’s API cal ls for a function value, and the client’s
+desired behavior for that function is to cal l a met hod on a specific receiver.
+
 
 
 
