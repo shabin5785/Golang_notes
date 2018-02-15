@@ -245,6 +245,7 @@ compiler inserts an implicit * operat ion for us. Thes e two function cal ls are
 pptr.Distance(q)
 (*pptr).Distance(q)
 
+-**In every valid met hod call expression, exactly one of these three statements is true**.
 
 
 
