@@ -258,6 +258,10 @@ Or the receiver argument has typ e *T and the receiver parameter has typ e T. Th
 implicitly dereferences the receiver, in other words, loads the value:
 pptr.Distance(q) // implicit (*pptr)
 
+-Nil Is a Valid Receiver Value
+Just as some functions allow nil pointers as arguments, so do some methods for their receiver,
+especi ally if nil is a meaningf ul zero value of the typ e, as with maps and slices
+
 
 
 
