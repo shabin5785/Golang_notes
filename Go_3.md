@@ -304,8 +304,14 @@ scaleP(2) // p becomes (2, 4)
 scaleP(3) // then (6, 12)
 scaleP(10) // then (60, 120)
 
--Method values are useful when a package’s API cal ls for a function value, and the client’s
+-**Method values** are useful when a package’s API cal ls for a function value, and the client’s
 desired behavior for that function is to cal l a met hod on a specific receiver.
+
+-Related to the method value is the **method expression**. When cal ling a met hod, as opposed to
+an ordinar y function, we must supply the receiver in a speci al way using the selec tor syntax. A
+method expression, written T.f or (*T).f where T is a typ e, yields a function value with a regular
+first parameter tak ing the place of the receiver, so it can be cal le d in the usual way.
+
 
 
 
