@@ -215,5 +215,19 @@ on named typ es that are themselves pointer typ es:
 type P *int
 func (P) f() { /* ... */ } // compile error: invalid receiver type
 
+-The (*Point).ScaleBy method can be cal le d by providing a *Point receiver, like this:
+	r := &Point{1, 2}
+	r.ScaleBy(2)
+	fmt.Println(*r) // "{2, 4}"
+or this:
+	p := Point{1, 2}
+	pptr := &p
+	pptr.ScaleBy(2)
+	fmt.Println(p) // "{2, 4}"
+or this:
+	p := Point{1, 2}
+	(&p).ScaleBy(2)
+	fmt.Println(p) // "{2, 4}"
+    
 
 
