@@ -329,6 +329,12 @@ methods belonging to the same typ e so that you can cal l the chosen met hod wit
 objec t. Encapsulat ion, sometimes cal le d information hiding, is a key aspect of object-oriented
 programming.
 
+-Go has only one mechanism to control the visibility of names: capitalize d identifiers are
+exp orted from the package in which they are defined, and uncapitalize d names are not. The
+same mechanism that limits access to members of a package also limits access to the fields of a
+struc t or the methods of a typ e. As a consequence, to encapsulate an object, we must make it a
+struc t.
+
 
 
 
