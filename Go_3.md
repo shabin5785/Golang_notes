@@ -293,4 +293,17 @@ to sep arate these two operat ions. The selec tor p.Distance yields a method val
 that binds a met hod (Point.Distance) to a specific receiver value p. This function can
 then be invoked without a receiver value; it needs only the non-receiver arguments
 
+p := Point{1, 2}
+q := Point{4, 6}
+distanceFromP := p.Distance // method value
+fmt.Println(distanceFromP(q)) // "5"
+var origin Point // {0, 0}
+fmt.Println(distanceFromP(origin)) // "2.23606797749979", ;5
+scaleP := p.ScaleBy // method value
+scaleP(2) // p becomes (2, 4)
+scaleP(3) // then (6, 12)
+scaleP(10) // then (60, 120)
+
+
+
 
