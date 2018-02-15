@@ -288,4 +288,9 @@ de clared methods
 complex typ es with many met hods to be bui lt up by the composition of several fields,
 providing a few met hods.
 
+-Usual ly we selec t and cal l a met hod in the same expression, as in p.Distance(), but it’s possible
+to sep arate these two operat ions. The selec tor p.Distance yields a method value, a function
+that binds a met hod (Point.Distance) to a specific receiver value p. This function can
+then be invoked without a receiver value; it needs only the non-receiver arguments
+
 
