@@ -208,5 +208,9 @@ This is a method with a pointer receiver
 -In a realistic program, convention dic tates that if any met hod of Point has a pointer receiver,
 then all methods of Point should have a pointer receiver, even ones that don’t str ictly need it.
 
+-Named types (Point) and pointers to them (*Point) are the only typ es that may appear in a
+receiver declarat ion. Fur thermore, to avoid ambiguities, met hod declarat ions are not per mitted
+on named typ es that are themselves pointer typ es:
+
 
 
