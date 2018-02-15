@@ -205,5 +205,8 @@ an interface.
 
 This is a method with a pointer receiver
 
+-In a realistic program, convention dic tates that if any met hod of Point has a pointer receiver,
+then all methods of Point should have a pointer receiver, even ones that don’t str ictly need it.
+
 
 
