@@ -284,4 +284,8 @@ fmt.Println(cp.Y) // "2"
 Point field using a receiver of typ e ColoredPoint, even thoug h ColoredPoint has no
 de clared methods
 
+-The met hods of Point have been promoted to ColoredPoint. In this way, embedding allows
+complex typ es with many met hods to be bui lt up by the composition of several fields,
+providing a few met hods.
+
 
