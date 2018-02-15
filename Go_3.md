@@ -176,5 +176,7 @@ q := Point{4, 6}
 fmt.Println(Distance(p, q)) // "5", function call
 fmt.Println(p.Distance(q)) // "5", method call
 
-
+-There’s no conflic t between the two declarat ions of functions cal le d Distance ab ove. The first
+de clares a package-le vel function cal le d geometry.Distance. The second de clares a met hod
+of the typ e Point, so its name is Point.Distance.
 
