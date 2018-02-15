@@ -247,5 +247,17 @@ pptr.Distance(q)
 
 -**In every valid met hod call expression, exactly one of these three statements is true**.
 
+Either the receiver argument has the same typ e as the receiver parameter, for example both
+have typ e T or both have typ e *T:
+Point{1, 2}.Distance(q) // Point
+pptr.ScaleBy(2) // *Point
+Or the receiver argument is a variable of typ e T and the receiver parameter has typ e *T. The
+compiler implicitly takes the address of the var iable:
+p.ScaleBy(2) // implicit (&p)
+Or the receiver argument has typ e *T and the receiver parameter has typ e T. The compiler
+implicitly dereferences the receiver, in other words, loads the value:
+pptr.Distance(q) // implicit (*pptr)
+
+
 
 
