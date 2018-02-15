@@ -269,4 +269,9 @@ Point
 Color color.RGBA
 }
 
+We could have defined ColoredPoint as a str uct of three fields, but instead we embedded a
+Point to provide the X and Y fields
+
+
+
 
