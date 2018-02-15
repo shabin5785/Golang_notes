@@ -171,5 +171,10 @@ choice is the first letter of the typ e name, like p for Point
 -In a met hod cal l, the receiver argument appears before the method name. This paral lels the
 de clarat ion, in which the receiver parameter appears before the method name.
 
+p := Point{1, 2}
+q := Point{4, 6}
+fmt.Println(Distance(p, q)) // "5", function call
+fmt.Println(p.Distance(q)) // "5", method call
+
 
 
