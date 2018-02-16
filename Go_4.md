@@ -93,7 +93,30 @@ Circular embedding of interfaces is disallowed and will be detected while compil
 Variables have type known at compilation phase. It’s specified while declaration, never changes and is known as static type (or just type). Variables of interface type also have static type which is an interface itself. They additionally have dynamic type so the type of assigned value
 
 -Package reflect can be used to get dynamic type of interface
+Also fmt package is able to do that with format verb %T:
 
+type I interface {
+    M()
+}
+type T struct {}
+func (T) M() {}
+func main() {
+    var t *T
+    if t == nil {
+        fmt.Println("t is nil")
+    } else {
+        fmt.Println("t is not nil")
+    }
+    var i I = t
+    if i == nil {
+        fmt.Println("i is nil")
+    } else {
+        fmt.Println("i is not nil")
+    }
+}
+
+t is nil
+i is not nil
 
 
 
