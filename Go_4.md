@@ -17,5 +17,12 @@ we’ve been using the empty interface typ e since the ver y first
 example in this book, because it is what allows functions like fmt.Println, or errorf in
 Section 5.7, to accept arguments of any typ e.
 
+var any interface{}
+any = true
+any = 12.34
+any = "hello"
+any = map[string]int{"one": 1}
+any = new(bytes.Buffer)
+
 
 
