@@ -118,5 +118,10 @@ func main() {
 t is nil
 i is not nil
 
+ Interface type value consists of two components:
+
+dynamic type
+dynamic value
+
 
 
