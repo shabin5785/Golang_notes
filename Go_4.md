@@ -44,5 +44,7 @@ func main() {
     Hello(T{name: "Michał"}) // "Hi, my name is Michał"
 }
 
+Type T satisfies interface I defined in the first snippet. Values of type T can be f.ex. passed to any function accepting I as a parameter
+
 
 
