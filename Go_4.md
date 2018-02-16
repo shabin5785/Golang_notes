@@ -28,4 +28,21 @@ any = new(bytes.Buffer)
 
 -No particular implementation is enforced. It’s enough that type defines methods with desired names and signatures (input and output parameters) to say it implements (satisfies) an interface:
 
+type I interface {
+    M() string
+}
+type T struct {
+    name string
+}
+func (t T) M() string {
+    return t.name
+}
+func Hello(i I) {
+    fmt.Printf("Hi, my name is %s\n", i.M())
+}
+func main() {
+    Hello(T{name: "Michał"}) // "Hi, my name is Michał"
+}
+
+
 
