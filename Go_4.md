@@ -92,6 +92,8 @@ Circular embedding of interfaces is disallowed and will be detected while compil
 -Variables have type known at compilation phase. It’s specified while declaration, never changes and is known as static type (or just type). Variables of interface type also have static type which is an interface itself. They additionally have dynamic type so the type of assigned value
 Variables have type known at compilation phase. It’s specified while declaration, never changes and is known as static type (or just type). Variables of interface type also have static type which is an interface itself. They additionally have dynamic type so the type of assigned value
 
+-Package reflect can be used to get dynamic type of interface
+
 
 
 
