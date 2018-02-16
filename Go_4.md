@@ -90,6 +90,8 @@ Circular embedding of interfaces is disallowed and will be detected while compil
 -Variable of interface type I can hold any value implementing I
 
 -Variables have type known at compilation phase. It’s specified while declaration, never changes and is known as static type (or just type). Variables of interface type also have static type which is an interface itself. They additionally have dynamic type so the type of assigned value
+Variables have type known at compilation phase. It’s specified while declaration, never changes and is known as static type (or just type). Variables of interface type also have static type which is an interface itself. They additionally have dynamic type so the type of assigned value
+
 
 
 
