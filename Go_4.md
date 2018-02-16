@@ -131,6 +131,8 @@ dynamic value
  -Every type which implements all interface’s method automatically satisfies such interface. We don’t need in these types use any other keywords like f.ex. implements in Java to say that type implements an interface. It’s automatically detected by Go compiler and it’s really powerful feature of the language 
  
  -Interface type value gives access ONLY to methods of its interface type. It hides all details about the exact value like if it’s struct, array, scalar etc
+ 
+-There are times when value needs to be converted to a different type. Conversion is checked at compilation-time
 
 
 
