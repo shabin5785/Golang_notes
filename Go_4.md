@@ -68,4 +68,9 @@ func main() {
 }
 
 
+-In Go we’ve two concepts related to interfaces:
+
+Interface — set of methods required to implement such interface. It’s defined using keyword interface
+Interface type — variable of interface type which can hold any value implementing particular interface
+
 
