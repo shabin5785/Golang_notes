@@ -124,6 +124,11 @@ dynamic type
 dynamic value
 
  Dynamic value is the actual value assigned. In discussed snippet after assignment var i I = t, dynamic value of i is nil but dynamic type is *T. Function call fmt.Printf("%T\n", i) after this assignment would print *main.T. Interface type value is nil iff both dynamic value and dynamic type are nil. The effect is that even if interface type value holds a nil pointer then such interface value is not nil.
+ 
+ -Method set of interface doesn’t have to contain at least one member. It can be completely empty
+ Empty interface is automatically satisfied by any type — so value of any type can be assigned to such interface type variable. The behaviour of dynamic or static types apply to empty interfaces in the same way as to non-empty interfaces. Prominent use of empty interface exists in variadic function fmt.Println.
+ 
+ 
 
 
 
