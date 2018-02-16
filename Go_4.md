@@ -24,5 +24,7 @@ any = "hello"
 any = map[string]int{"one": 1}
 any = new(bytes.Buffer)
 
+-Interfaces make the code more flexible, scalable and it’s a way to achieve polymorphism in Golang. Instead of requiring a particular type, interfaces allow to specify that only some behaviour is needed
+
 
 
