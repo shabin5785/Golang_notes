@@ -128,7 +128,9 @@ dynamic value
  -Method set of interface doesn’t have to contain at least one member. It can be completely empty
  Empty interface is automatically satisfied by any type — so value of any type can be assigned to such interface type variable. The behaviour of dynamic or static types apply to empty interfaces in the same way as to non-empty interfaces. Prominent use of empty interface exists in variadic function fmt.Println.
  
+ -Every type which implements all interface’s method automatically satisfies such interface. We don’t need in these types use any other keywords like f.ex. implements in Java to say that type implements an interface. It’s automatically detected by Go compiler and it’s really powerful feature of the language 
  
+ -Interface type value gives access ONLY to methods of its interface type. It hides all details about the exact value like if it’s struct, array, scalar etc
 
 
 
