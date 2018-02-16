@@ -134,5 +134,19 @@ dynamic value
  
 -There are times when value needs to be converted to a different type. Conversion is checked at compilation-time
 
+-Conversion can be done only if Go compiler is able to check its correctness. Scenarios where it isn’t verifiable at compile-time are as follows:
+
+interface type → concrete type (source code)
+ interface type → interface type, where the method set of the right side isn’t a subset of the method set from the type on the left 
+ 
+ 
+ -The syntax of type assertion expression is as follows:
+
+v.(T)
+where v is of interface type and T is either abstract or concrete type.
+
+
+
+
 
 
