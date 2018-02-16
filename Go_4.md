@@ -73,4 +73,18 @@ func main() {
 Interface — set of methods required to implement such interface. It’s defined using keyword interface
 Interface type — variable of interface type which can hold any value implementing particular interface
 
+-**Declaration of the interface** type specifies methods belonging to it. Method is defined by its name and signature — input and result parameters:
+
+type I interface {
+    m1()
+    m2(int)
+    m3(int) int
+    m4() int
+}
+
+Besides methods it’s allowed to embedded other interfaces — either defined in the same package or imported — using qualified name. It adds all methods from embedded interface
+
+If I embeds an interface J which in turn embeds other interface K, then all methods from K will be also added to I
+
+
 
