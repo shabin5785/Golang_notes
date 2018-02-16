@@ -48,5 +48,22 @@ Type T satisfies interface I defined in the first snippet. Values of type T can 
 
 -Prominent feature of Golang is that interfaces are implemented implicitly. Programmer doesn’t have to specify that type T implements interface I. That work is done by the Go compiler (never send a human to do a machine’s job). Really nice implication of this behaviours is the possibility to define interface which can be automatically implemented by the types already written (without any changes).
 
+-Flexibility provided by interfaces comes from the fact that single type can implement many interfaces
 
+type I1 interface {
+    M1()
+}
+type I2 interface {
+    M2()
+}
+type T struct{}
+func (T) M1() { fmt.Println("T.M1") }
+func (T) M2() { fmt.Println("T.M2") }
+func f1(i I1) { i.M1() }
+func f2(i I2) { i.M2() }
+func main() {
+    t := T{}
+    f1(t) // "T.M1"
+    f2(t) // "T.M2"
+}
 
