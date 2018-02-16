@@ -13,5 +13,9 @@ al l the met hods that a *T pointer does, and as a result it mig ht sat isf y fe
 -This may seem useless, but in fac t the typ e interface{}, which is
 called the empty interface type, is indispensable. Because the **empty interface** typ e places no
 demands on the typ es that sat isf y it, we can assig n any value to the empty interface.
+we’ve been using the empty interface typ e since the ver y first
+example in this book, because it is what allows functions like fmt.Println, or errorf in
+Section 5.7, to accept arguments of any typ e.
+
 
 
