@@ -85,6 +85,9 @@ type I interface {
 Besides methods it’s allowed to embedded other interfaces — either defined in the same package or imported — using qualified name. It adds all methods from embedded interface
 
 If I embeds an interface J which in turn embeds other interface K, then all methods from K will be also added to I
+Circular embedding of interfaces is disallowed and will be detected while compilation
+
+-Variable of interface type I can hold any value implementing I
 
 
 
