@@ -243,6 +243,11 @@ another. This is cal le d a **pipeline**.
 channel has been drained, that is, after the last sent element has been received, all subsequent
 receive operat ions will proceed without blo cking but will yield a zero value.
 
+-There is no way to test direc tly whether a channel has been clos ed, but there is a var iant of the
+receive operat ion that produces two results: the received channel element, plus a boole an
+value, conventionally cal le d ok, which is true for a successf ul receive and false for a receive
+on a clos ed and drained channel
+
 
 
 
