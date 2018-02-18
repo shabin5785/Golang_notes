@@ -236,6 +236,15 @@ by using a channel whose element typ e is struct{}, thoug h it’s common to use
 bool or int for the same pur pos e since done <1
 is shorter than done <-struct{}{}.
 
+-Channels can be used to connect goroutines toget her so that the output of one is the input to
+another. This is cal le d a **pipeline**.
+
+-After a channel has been clos ed, any fur ther send operat ions on it will panic. After the clos ed
+channel has been drained, that is, after the last sent element has been received, all subsequent
+receive operat ions will proceed without blo cking but will yield a zero value.
+
+
+
 
 
 
