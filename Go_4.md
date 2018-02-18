@@ -279,6 +279,14 @@ receive operat ion removes an element from the front. If the channel is full, th
 blocks its goroutine until space is made available by another goroutine’s receive. Conversely, if
 the channel is empty, a receive operat ion blo cks until a value is sent by another goroutine
 
+-In this example, the send and receive operat ions were all per formed by the same goroutine,
+but in real programs they are usually executed by dif ferent goroutines. Novices are sometimes
+tempted to use buf fered channels within a single goroutine as a queue, lured by their ple asingly
+simple syntax, but this is a mistake. Channels are deeply connected to goroutine
+scheduling, and without another goroutine receiving from the channel, a sender—and perhaps
+the whole program—risks becoming blo cked forever. If all you need is a simple queue, make
+one using a slice.
+
 
 
 
