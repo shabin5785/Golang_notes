@@ -146,7 +146,11 @@ v.(T)
 where v is of interface type and T is either abstract or concrete type.
 
 
+**GoRoutines**
 
-
-
-
+-Go enables two sty les of concur rent programming. One is goroutines and
+channels, which support communicating sequential processes or CSP, a model of concur rency
+in which values are passed bet ween indep endent activities (goroutines) but var iables are for
+the most par t confined to a single activity. Second is traditional
+model of shared memory multithreading, which will be fami liar if you’ve used threads in
+other mainstream langu ages.
