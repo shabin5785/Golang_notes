@@ -299,7 +299,9 @@ received. Fai lure to allocate sufficient buf fer cap acity would cause the prog
 
 -Consider a function that works correc tly in a sequential program. That function is concurrency-
 s afe if it continues to work correc tly even when cal le d concurrently, that is, from two or
-more goroutines with no additional synchronizat ion.
+more goroutines with no additional synchronizat ion. A type is
+concurrency-s afe if all its accessible met hods and operat ions are concur rency-s afe.
+
 
 
 
