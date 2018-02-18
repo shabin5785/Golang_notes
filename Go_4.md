@@ -313,7 +313,9 @@ them must enforce mutual exclusion
 
 -we can use a channel of cap acity 1 to ensure that at most one goroutine accesses a shared var iable at a time.
 A semaphore that counts only to 1 is cal le d a **binary semaphore**.
-
+This pattern of mutual exclusion is so useful that it is supported direc tly by the Mutex type
+from the sync package. Its Lock method acquires the token (cal le d a lock) and its Unlock
+method releases it:
 
 
 
