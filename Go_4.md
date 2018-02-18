@@ -202,6 +202,10 @@ wr itten using the <-operator. In a send statement, the <-separates the channel 
 In a receive expression, <-precedes the channel operand. A receive expression whose
 result is not used is a valid statement.
 
+ch <-x// a send statement
+x = <-ch// a receive expression in an assignment statement
+<-ch// a receive statement; result is discarded
+
 
 
 
