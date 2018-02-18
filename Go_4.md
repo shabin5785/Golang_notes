@@ -355,7 +355,17 @@ al l goroutines.
 
 -Even with the greatest of care, it’s all too easy to make concur rency mistakes. Fortunately, the
 Go runtime and toolchain are equipped with a sophisticated and easy-to-use dynamic analysis
-tool, the **race detector**.
+tool, the **race detector**. Just add the race flag to your go build, go run, or go test command.
+
+**Goroutines and Threads**
+
+-Each OS thread has a fixed-size blo ck of memor y (often as large as 2MB) for its stack, the work
+area where it saves the local variables of function cal ls that are in progress or temporar ily
+suspende d while another function is cal le d. In contrast, a goroutine starts life with a small stack, typic ally 2KB. A goroutine’s stack, like the stack of an OS thread, holds the local variables of active and suspended function cal ls, but un li ke an OS thread, a goroutine’s stack is not fixed; it grows and shr inks as needed. The size
+limit for a goroutine stack may be as much as 1GB, orders of mag nitude larger than a typic al
+fixed-size thread stack, thoug h of course few goroutines use that much.
+
+-OS threads are scheduled by the OS ker nel
 
 
 
