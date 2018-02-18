@@ -187,5 +187,9 @@ chan int.
 To create a channel, we use the bui lt-in make function:
 ch := make(chan int) // ch has type 'chan int'
 
+-As with maps, a channel is a reference to the dat a struc ture created by make. When we copy a
+channel or pass one as an argument to a function, we are copying a reference, so cal ler and
+callee refer to the same dat a struc ture. As with other reference typ es, the zero value of a channel
+is nil.
 
 
