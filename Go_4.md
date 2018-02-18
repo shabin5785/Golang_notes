@@ -169,4 +169,9 @@ immediately:
 f() // call f(); wait for it to return
 go f() // create a new goroutine that calls f(); don't wait
 
+The main function then retur ns. When this happens, all goroutines are abruptly ter minated
+and the program exits. Other than by retur ning from main or exiting the program, there is no
+prog rammat ic way for one goroutine to stop another, but as we will see later, there are ways to
+communic ate with a goroutine to request that it stop its elf.
+
 
