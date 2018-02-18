@@ -379,6 +379,13 @@ The Go runtime contains its own scheduler that uses a technique known as m:n sch
 because it multiplexes (or schedules) m goroutines on n OS threads. The job of the Go
 scheduler is analogous to that of the ker nel scheduler, but it is concer ned only with the
 goroutines of a single Go program.
+Unlike the operat ing system’s thread scheduler, the Go scheduler is not invoked periodic ally
+by a hardware timer, but implicitly by cer tain Go langu age constr ucts. For example, when a
+goroutine cal ls time.Sleep or blo cks in a channel or mutex operat ion, the scheduler puts it to
+sleep and runs another goroutine until it is time to wake the first one up. Because it doesn’t
+need a switch to ker nel context, res cheduling a goroutine is much cheaper than res cheduling a
+thread.
+
 
 
 
