@@ -174,4 +174,16 @@ and the program exits. Other than by retur ning from main or exiting the program
 prog rammat ic way for one goroutine to stop another, but as we will see later, there are ways to
 communic ate with a goroutine to request that it stop its elf.
 
+- when main routine exitsx all other go routines running is stopped or exited abruptly.
+
+**Channels**
+
+-If goroutines are the activities of a concur rent Go program, channels are the connections
+between them. A channel is a communic ation mechanism that lets one goroutine send values
+to another goroutine. Each channel is a conduit for values of a par tic ular typ e, cal le d the
+channel’s element type. The typ e of a channel whose elements have typ e int is written
+chan int.
+
+
+
 
