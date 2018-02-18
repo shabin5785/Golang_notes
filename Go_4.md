@@ -332,9 +332,9 @@ lo ck once it is finished, on all paths through the function, including error pa
 -Each function acquires a mutex
 lo ck at the beg inning and releases it at the end, thereby ensuring that the shared var iables are
 not accessed concur rently. This arrangement of functions, mutex lock, and var iables is cal le d
-a **moni
+a **monitor**.
 
-tor**.
+
 
 
 
