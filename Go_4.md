@@ -223,6 +223,13 @@ transmitted and both goroutines may continue. Conversely, if the receive operat 
 attempted first, the receiving goroutine is blo cked until another goroutine per forms a send on
 the same channel
 
+Communic ation over an unbuf fered channel causes the sending and receiving goroutines to
+synchroniz e. Because of this, unbuffered channels are sometimes cal le d **synchronous** channels.
+When a value is sent on an unbuf fered channel, the receipt of the value happens before the
+reawakening of the sending goroutine.
+
+
+
 
 
 
