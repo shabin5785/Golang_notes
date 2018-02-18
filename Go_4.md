@@ -155,4 +155,5 @@ the most par t confined to a single activity. Second is traditional
 model of shared memory multithreading, which will be fami liar if you’ve used threads in
 other mainstream langu ages.
 
+-In Go, each concur rently executing activity is cal le d a **goroutine**.
 
