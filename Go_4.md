@@ -337,6 +337,16 @@ a **monitor**.
 -but because mutex locks are not re-entrant—it’s not possible to lock a mutex that’s already locked—this
 le ads to a deadlock where nothing can proceed,
 
+-There is a good reason Go’s mutexes are not re-entrant. The pur pos e of a mutex is to ensure
+that certain invar iants of the shared var iables are maintained at critical points dur ing program
+exec ution. One of the invar iants is ‘‘no goroutine is accessing the shared var iables,’’ but there
+may be additional invar iants specific to the dat a struc tures that the mutex guards. When a
+goroutine acquires a mutex lock, it may assume that the invar iants hold. Whi le it holds the
+lo ck, it may update the shared var iables so that the invar iants are temporar ily violated.
+However, when it releases the lock, it must guarantee that order has been restored and the
+invar iants hold once again. Although a re-entrant mutex would ensure that no other
+goroutines are accessing the shared var iables, it cannot protec t the additional invar iants of
+thos e var iables.
 
 
 
@@ -347,6 +357,16 @@ le ads to a deadlock where nothing can proceed,
 -but because mutex locks are not re-entrant—it’s not possible to lock a mutex that’s already locked—this
 le ads to a deadlock where nothing can proceed,
 
+-There is a good reason Go’s mutexes are not re-entrant. The pur pos e of a mutex is to ensure
+that certain invar iants of the shared var iables are maintained at critical points dur ing program
+exec ution. One of the invar iants is ‘‘no goroutine is accessing the shared var iables,’’ but there
+may be additional invar iants specific to the dat a struc tures that the mutex guards. When a
+goroutine acquires a mutex lock, it may assume that the invar iants hold. Whi le it holds the
+lo ck, it may update the shared var iables so that the invar iants are temporar ily violated.
+However, when it releases the lock, it must guarantee that order has been restored and the
+invar iants hold once again. Although a re-entrant mutex would ensure that no other
+goroutines are accessing the shared var iables, it cannot protec t the additional invar iants of
+thos e var iables.
 
 
 
