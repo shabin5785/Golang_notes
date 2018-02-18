@@ -318,6 +318,20 @@ from the sync package. Its Lock method acquires the token (cal le d a lock) and 
 method releases it:
 
 
+-Each time a goroutine accesses the var iables of the ban k (just balance here), it must cal l the
+mutex’s Lock method to acquire an exclusive lock. If some other goroutine has acquired the
+lo ck, this operat ion will blo ck until the other goroutine cal ls Unlock and the lock becomes
+avai lable again. The mutex guards the shared var iables. By convention, the var iables guarde d
+by a mutex are declared immediately after the declarat ion of the mutex its elf. If you deviate
+from this, be sure to document it.
+The reg ion of code bet ween Lock and Unlock in which a goroutine is free to read and modif y
+the shared var iables is cal le d a cr itical section. The lock holder’s cal l to Unlock happens before
+any other goroutine can acquire the lock for itself. It is essential that the goroutine release the
+lo ck once it is finished, on all paths through the function, including error pat hs.
+
+
+
+
 
 
 
