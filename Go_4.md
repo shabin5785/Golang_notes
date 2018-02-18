@@ -307,6 +307,10 @@ prog ram concurrency-s afe. Indeed, concur rency-s afe typ es are the exception 
 rule, so you should access a var iable concurrently only if the documentation for its typ e says
 that this is safe. We avoid concurrent access to most var iables either by confining them to a
 single goroutine or by maintaining a hig her-le vel invar iant of mutual exclusion
+In contrast, exported package-le vel functions are general ly exp ected to be concur rency-s afe.
+Since package-le vel var iables cannot be confined to a single goroutine, functions that modif y
+them must enforce mutual exclusion
+
 
 
 
