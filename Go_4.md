@@ -192,4 +192,7 @@ channel or pass one as an argument to a function, we are copying a reference, so
 callee refer to the same dat a struc ture. As with other reference typ es, the zero value of a channel
 is nil.
 
+-Two channels of the same typ e may be compared using ==. The comparison is true if both are
+references to the same channel dat a struc ture. A channel may also be compared to nil.
+
 
