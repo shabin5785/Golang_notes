@@ -348,6 +348,11 @@ invar iants hold once again. Although a re-entrant mutex would ensure that no ot
 goroutines are accessing the shared var iables, it cannot protec t the additional invar iants of
 thos e var iables.
 
+-Within a single goroutine, the effec ts of each statement are guaranteed to occ ur in the order of
+exec ution; goroutines are sequentially consistent. But in the abs ence of explicit synchronization
+using a channel or mutex, there is no guarantee that events are seen in the same order by
+al l goroutines.
+
 
 
 
@@ -367,6 +372,11 @@ However, when it releases the lock, it must guarantee that order has been restor
 invar iants hold once again. Although a re-entrant mutex would ensure that no other
 goroutines are accessing the shared var iables, it cannot protec t the additional invar iants of
 thos e var iables.
+
+-Within a single goroutine, the effec ts of each statement are guaranteed to occ ur in the order of
+exec ution; goroutines are sequentially consistent. But in the abs ence of explicit synchronization
+using a channel or mutex, there is no guarantee that events are seen in the same order by
+al l goroutines.
 
 
 
