@@ -228,7 +228,13 @@ synchroniz e. Because of this, unbuffered channels are sometimes cal le d **sync
 When a value is sent on an unbuf fered channel, the receipt of the value happens before the
 reawakening of the sending goroutine.
 
-
+Messages sent over channels have two important aspects. Each message has a value, but
+sometimes the fac t of communic ation and the moment at which it occ urs are just as
+important. We cal l messages events when we wish to stress this aspect. When the event carries
+no additional informat ion, that is, its sole pur pos e is synchronizat ion, we’ll emphasize this
+by using a channel whose element typ e is struct{}, thoug h it’s common to use a channel of
+bool or int for the same pur pos e since done <1
+is shorter than done <-struct{}{}.
 
 
 
