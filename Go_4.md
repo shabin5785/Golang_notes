@@ -154,3 +154,5 @@ in which values are passed bet ween indep endent activities (goroutines) but var
 the most par t confined to a single activity. Second is traditional
 model of shared memory multithreading, which will be fami liar if you’ve used threads in
 other mainstream langu ages.
+
+
