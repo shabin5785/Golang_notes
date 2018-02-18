@@ -274,6 +274,11 @@ detec ted at compile time.
 is created, by the cap acity argument to make.
 ch = make(chan string, 3)
 
+A send operat ion on a buf fered channel inserts an element at the back of the queue, and a
+receive operat ion removes an element from the front. If the channel is full, the send operat ion
+blocks its goroutine until space is made available by another goroutine’s receive. Conversely, if
+the channel is empty, a receive operat ion blo cks until a value is sent by another goroutine
+
 
 
 
