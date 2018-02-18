@@ -210,6 +210,13 @@ x = <-ch// a receive expression in an assignment statement
 ever be sent on this channel; subsequent attempts to send will panic. Receive operat ions on a clos ed channel yield the values that have been sent until no more values are lef t; any receive operat ions thereafter complete immediately and yield the zero value of the channel’s element type. To clos e a channel, we cal l the bui lt-in close function:
 close(ch)
 
+A channel created with a simple cal l to make is cal le d an unbuffered channel, but make accepts
+an optional second argument, an integer cal le d the channel’s capacity. If the cap acity is nonzero,
+make creates a buffered channel.
+ch = make(chan int) // unbuffered channel
+ch = make(chan int, 0) // unbuffered channel
+ch = make(chan int, 3) // buffered channel with capacity 3
+
 
 
 
