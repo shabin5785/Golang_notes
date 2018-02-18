@@ -365,7 +365,22 @@ suspende d while another function is cal le d. In contrast, a goroutine starts l
 limit for a goroutine stack may be as much as 1GB, orders of mag nitude larger than a typic al
 fixed-size thread stack, thoug h of course few goroutines use that much.
 
--OS threads are scheduled by the OS ker nel
+-OS threads are scheduled by the OS ker nel.Every few milliseconds, a hardware timer interrupts
+the processor, which causes a ker nel function cal le d the scheduler to be invoked. This
+function suspends the cur rently executing thread and saves its reg isters in memor y, looks over
+the list of threads and decides which one should run next, restores that thread’s reg isters from
+memory, then resumes the execution of that thread. Because OS threads are scheduled by the
+kernel, passing control from one thread to another requires a full context switch, that is, sav ing
+the state of one user thread to memor y, restoring the state of another, and updat ing the
+scheduler’s dat a struc tures. This operat ion is slow, due to its poor locality and the number of
+memory accesses required, and has historically only gotten worse as the number of CPU cycles
+required to access memor y has increased.
+The Go runtime contains its own scheduler that uses a technique known as m:n scheduling,
+because it multiplexes (or schedules) m goroutines on n OS threads. The job of the Go
+scheduler is analogous to that of the ker nel scheduler, but it is concer ned only with the
+goroutines of a single Go program.
+
+
 
 
 
