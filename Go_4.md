@@ -386,7 +386,13 @@ sleep and runs another goroutine until it is time to wake the first one up. Beca
 need a switch to ker nel context, res cheduling a goroutine is much cheaper than res cheduling a
 thread.
 
--
+-In most operat ing systems and programming langu ages that support multithreading, the current
+thread has a distinct identity that can be easi ly obtained as an ordinar y value, typic ally an
+integer or pointer. This makes it easy to bui ld an abstrac tion cal le d thread-local storage, which
+is essential ly a global map keyed by thread identity, so that each thread can store and ret rie ve
+values indep endent of other threads.
+Goroutines have no notion of identity that is accessible to the programmer. This is by desig n,
+since thread-lo cal storage tends to be abused.
 
 
 
