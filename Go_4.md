@@ -295,6 +295,8 @@ know an upper bound on the number of values that will be sent on a channel, itâ€
 to create a buf fered channel of that size and per form al l the sends before the first value is
 received. Fai lure to allocate sufficient buf fer cap acity would cause the program to deadlock.
 
+-Channel buf fer ing may also affec t prog ram performance
+
 
 
 
