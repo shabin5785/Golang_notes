@@ -195,4 +195,14 @@ is nil.
 -Two channels of the same typ e may be compared using ==. The comparison is true if both are
 references to the same channel dat a struc ture. A channel may also be compared to nil.
 
+-A channel has two principal operat ions, send and receive, collec tively known as
+communications. A send statement transmits a value from one goroutine, through the channel,
+to another goroutine executing a corresponding receive expression. Both operat ions are
+wr itten using the <-operator. In a send statement, the <-separates the channel and value operands.
+In a receive expression, <-precedes the channel operand. A receive expression whose
+result is not used is a valid statement.
+
+
+
+
 
