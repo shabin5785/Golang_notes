@@ -334,6 +334,8 @@ lo ck at the beg inning and releases it at the end, thereby ensuring that the sh
 not accessed concur rently. This arrangement of functions, mutex lock, and var iables is cal le d
 a **monitor**.
 
+-but because mutex locks are not re-entrant—it’s not possible to lock a mutex that’s already locked—this
+le ads to a deadlock where nothing can proceed,
 
 
 
@@ -342,6 +344,8 @@ a **monitor**.
 
 
 
+-but because mutex locks are not re-entrant—it’s not possible to lock a mutex that’s already locked—this
+le ads to a deadlock where nothing can proceed,
 
 
 
