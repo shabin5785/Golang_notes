@@ -166,3 +166,7 @@ is an ordinar y function or met hod cal l prefixed by the key word go. A go stat
 causes the function to be cal le d in a newly created goroutine. The go statement its elf completes
 immediately:
 
+f() // call f(); wait for it to return
+go f() // create a new goroutine that calls f(); don't wait
+
+
