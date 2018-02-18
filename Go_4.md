@@ -353,6 +353,12 @@ exec ution; goroutines are sequentially consistent. But in the abs ence of expli
 using a channel or mutex, there is no guarantee that events are seen in the same order by
 al l goroutines.
 
+-Even with the greatest of care, it’s all too easy to make concur rency mistakes. Fortunately, the
+Go runtime and toolchain are equipped with a sophisticated and easy-to-use dynamic analysis
+tool, the **race detector**.
+
+
+
 
 
 
@@ -377,6 +383,10 @@ thos e var iables.
 exec ution; goroutines are sequentially consistent. But in the abs ence of explicit synchronization
 using a channel or mutex, there is no guarantee that events are seen in the same order by
 al l goroutines.
+
+-Even with the greatest of care, it’s all too easy to make concur rency mistakes. Fortunately, the
+Go runtime and toolchain are equipped with a sophisticated and easy-to-use dynamic analysis
+tool, the race detector.
 
 
 
