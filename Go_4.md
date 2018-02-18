@@ -217,6 +217,12 @@ ch = make(chan int) // unbuffered channel
 ch = make(chan int, 0) // unbuffered channel
 ch = make(chan int, 3) // buffered channel with capacity 3
 
+-A send operat ion on an **unbuffered channel** blo cks the sending goroutine until another
+goroutine executes a corresponding receive on the same channel, at which point the value is
+transmitted and both goroutines may continue. Conversely, if the receive operat ion was
+attempted first, the receiving goroutine is blo cked until another goroutine per forms a send on
+the same channel
+
 
 
 
