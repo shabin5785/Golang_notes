@@ -248,6 +248,32 @@ receive operat ion that produces two results: the received channel element, plus
 value, conventionally cal le d ok, which is true for a successf ul receive and false for a receive
 on a clos ed and drained channel
 
+-You needn’t clos e ever y channel when you’ve finished with it. It’s only necessary to clos e a
+channel when it is important to tell the receiving goroutines that all dat a have been sent. A
+channel that the garb age collec tor deter mines to be unreachable will have its res ources
+reclaimed whether or not it is clos ed. (
+
+-func counter(out chan int)
+func squarer(out, in chan int)
+func printer(in chan int)
+The squarer function, sitting in the midd le of the pipeline, takes two parameters, the input
+channel and the output channel. Both have the same typ e, but their intended uses are
+opposite: in is only to be received from, and out is only to be sent to. The names in and out
+convey this intention, but still, nothing prevents squarer from sending to in or receiving
+from out.
+This arrangement is typic al. When a channel is supplie d as a function parameter, it is nearly
+always with the intent that it be used exclusively for sending or exclusively for receiving.
+To document this intent and prevent misuse, the Go typ e system provides unidirectional channel
+typ es that expos e only one or the other of the send and receive operat ions. The typ e
+chan<-int, a send-only channel of int, allows sends but not receives. Conversely, the typ e
+<-chan int, a receive-only channel of int, allows receives but not sends. (The position of the
+<-arrow relative to the chan keyword is a mnemonic.) Violations of this discipline are
+detec ted at compile time.
+
+-A **buffered channel** has a queue of elements. The queue’s maximum size is deter mined when it
+is created, by the cap acity argument to make.
+ch = make(chan string, 3)
+
 
 
 
