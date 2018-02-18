@@ -156,4 +156,8 @@ model of shared memory multithreading, which will be fami liar if you’ve used 
 other mainstream langu ages.
 
 -In Go, each concur rently executing activity is cal le d a **goroutine**.
+If you have used operat ing system threads or threads in other langu ages, then you can assume
+for now that a goroutine is simi lar to a thread, and you’ll be able to write correc t prog rams.
+The dif ferences bet ween threads and goroutines are essential ly quantitative, not qualitative,
+
 
