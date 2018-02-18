@@ -184,6 +184,8 @@ to another goroutine. Each channel is a conduit for values of a par tic ular typ
 channel’s element type. The typ e of a channel whose elements have typ e int is written
 chan int.
 
+To create a channel, we use the bui lt-in make function:
+ch := make(chan int) // ch has type 'chan int'
 
 
 
