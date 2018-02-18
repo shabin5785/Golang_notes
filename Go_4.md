@@ -287,6 +287,16 @@ scheduling, and without another goroutine receiving from the channel, a sender�
 the whole program—risks becoming blo cked forever. If all you need is a simple queue, make
 one using a slice.
 
+-**The choice between unbuffered and buffered channels,** and the choice of a buf fered channel’s
+capacity, may both af fec t the correc tness of a program. Unbuf fered channels give stronger
+sy nchronizat ion guarantees because ever y send operat ion is synchronize d with its corresponding
+receive; with buffered channels, these operat ions are decoupled. Also, when we
+know an upper bound on the number of values that will be sent on a channel, it’s not unusual
+to create a buf fered channel of that size and per form al l the sends before the first value is
+received. Fai lure to allocate sufficient buf fer cap acity would cause the program to deadlock.
+
+
+
 
 
 
