@@ -302,6 +302,12 @@ s afe if it continues to work correc tly even when cal le d concurrently, that i
 more goroutines with no additional synchronizat ion. A type is
 concurrency-s afe if all its accessible met hods and operat ions are concur rency-s afe.
 
+-We can make a program concurrency-s afe without mak ing every concrete typ e in that
+prog ram concurrency-s afe. Indeed, concur rency-s afe typ es are the exception rat her than the
+rule, so you should access a var iable concurrently only if the documentation for its typ e says
+that this is safe. We avoid concurrent access to most var iables either by confining them to a
+single goroutine or by maintaining a hig her-le vel invar iant of mutual exclusion
+
 
 
 
