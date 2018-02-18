@@ -160,4 +160,9 @@ If you have used operat ing system threads or threads in other langu ages, then 
 for now that a goroutine is simi lar to a thread, and you’ll be able to write correc t prog rams.
 The dif ferences bet ween threads and goroutines are essential ly quantitative, not qualitative,
 
+-When a program starts, its only goroutine is the one that cal ls the main function, so we cal l it
+the main goroutine. New goroutines are created by the go statement. Syntactic ally, a go statement
+is an ordinar y function or met hod cal l prefixed by the key word go. A go statement
+causes the function to be cal le d in a newly created goroutine. The go statement its elf completes
+immediately:
 
