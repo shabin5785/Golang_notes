@@ -206,6 +206,10 @@ ch <-x// a send statement
 x = <-ch// a receive expression in an assignment statement
 <-ch// a receive statement; result is discarded
 
+-Channels support a third operat ion, close, which sets a flag indic ating that no more values will
+ever be sent on this channel; subsequent attempts to send will panic. Receive operat ions on a clos ed channel yield the values that have been sent until no more values are lef t; any receive operat ions thereafter complete immediately and yield the zero value of the channel’s element type. To clos e a channel, we cal l the bui lt-in close function:
+close(ch)
+
 
 
 
