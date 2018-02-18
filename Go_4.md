@@ -311,6 +311,9 @@ In contrast, exported package-le vel functions are general ly exp ected to be co
 Since package-le vel var iables cannot be confined to a single goroutine, functions that modif y
 them must enforce mutual exclusion
 
+-we can use a channel of cap acity 1 to ensure that at most one goroutine accesses a shared var iable at a time.
+A semaphore that counts only to 1 is cal le d a **binary semaphore**.
+
 
 
 
