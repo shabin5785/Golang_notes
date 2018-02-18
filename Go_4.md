@@ -297,6 +297,9 @@ received. Fai lure to allocate sufficient buf fer cap acity would cause the prog
 
 -Channel buf fer ing may also affec t prog ram performance
 
+-Consider a function that works correc tly in a sequential program. That function is concurrency-
+s afe if it continues to work correc tly even when cal le d concurrently, that is, from two or
+more goroutines with no additional synchronizat ion.
 
 
 
