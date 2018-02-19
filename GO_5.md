@@ -126,7 +126,14 @@ y, requires its own direc tor y
 
 Packages may be specified by their import pat hs, as we saw above, or by a relative direc tor y
 name, which must start with a . or .. segment even if this would not ordinar ily be required.
-If no argument is provide d, the cur rent direc tor y is assumed.
+If no argument is provide d, the cur rent direc tor y is assumed.Packages may also be specified as a list of file names, thoug h this tends to be used only for
+smal l prog rams and one-off exp eriments. If the package name is main, the executable name
+comes from the bas ename of the first .go file.
+
+-The go install command is ver y simi lar to go build, except that it saves the compiled code
+for each package and command instead of throwing it away. Compiled packages are saved
+beneath the $GOPATH/pkg direc tor y corresponding to the src direc tor y in which the source
+resides, and command executables are saved in the $GOPATH/bin direc tor y.
 
 
 
