@@ -55,4 +55,7 @@ names.
 -It is an error to import a package into a file but not refer to the name it defines within that file.
 However, on occ asion we must import a package merely for the side effects of doing so: evaluat
 ion of the initializer expressions of its package-le vel var iables and execution of its init functions
-(
+
+To suppress the ‘‘unused import’’ er ror we would other wise encounter, we must
+use a renaming import in which the alternat ive name is _, the blank identifier
+
