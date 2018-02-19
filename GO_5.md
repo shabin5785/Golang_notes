@@ -109,3 +109,9 @@ Launchpad and can make the appropriate requests to their version-control systems
 well-k nown sites, you may have to indic ate which version-control protocol to use in the
 import pat h, such as Git or Mercurial.
 
+-The direc tories that go get creates are true clients of the remote repository, not just copies of
+the files, so you can use version-control commands to see a dif f of local edits you’ve made or to
+update to a dif ferent revision
+
+
+
