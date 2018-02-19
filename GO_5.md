@@ -118,5 +118,10 @@ flag , go get wi l l ensure that all packages it visits, including dep endencies
 are updated to their latest version before being bui lt and instal le d. Without that flag , packages
 that already exist local ly will not be updated.
 
+-The go build command compiles each argument package. If the package is a librar y, the
+result is discarde d; this merely checks that the package is free of compile errors. If the package
+is named main, go build invokes the lin ker to create an executable in the cur rent direc tor y;
+the name of the executable is taken from the last seg ment of the package’s import pat h.
+
 
 
