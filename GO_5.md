@@ -137,5 +137,9 @@ resides, and command executables are saved in the $GOPATH/bin direc tor y.
 Thereafter, go build and go install do not run the compiler for those packages and commands if they have not changed, mak ing subsequent bui lds much faster. For convenience, go build -i installs the packages that are dep endencies
 of the bui ld target.
 
+-Go doc comments are always complete sentences, and the first sentence is usually a summar y
+that starts with the name being declared. Function parameters and other identifiers are mentioned
+without quotation or markup
+
 
 
