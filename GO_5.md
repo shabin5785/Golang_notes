@@ -93,3 +93,12 @@ GOROOT resembles that of GOPATH, so, for example, the source files of the fmt pa
 the $GOROOT/src/fmt direc tor y. Users never need to set GOROOT since, by defau lt, the go tool
 
 
+-When using the go tool, a package’s import pat h indic ates not only where to find it in the local
+workspace, but where to find it on the Internet so that go get can ret rie ve and update it.
+The go get command can down load a single package or an entire subtree or rep ository using
+the ... notation, as in the previous sec tion. The tool also computes and downlo ads all the
+dep endencies of the initial packages, which is why the golang.org/x/net/html package
+appeared in the workspace in the previous example.
+Once go get has downlo ade d the packages, it bui lds them and then installs the librar ies and
+commands.
+
