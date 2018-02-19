@@ -30,3 +30,7 @@ by another package.Conventionally, the package name is the last seg ment of the 
 packages may have the same name even thoug h their import pat hs necessarily dif fer. For
 example, the packages whose import pat hs are math/rand and crypto/rand both have the
 name rand.
+
+-AGo source file may contain zero or more import de clarat ions immediately after the package
+de clarat ion and before the first non-import declarat ion. Each import declarat ion may specif y
+the import pat h of a single package, or multiple packages in a parenthesize d list.
