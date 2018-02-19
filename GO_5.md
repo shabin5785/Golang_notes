@@ -26,4 +26,7 @@ also makes it possible to find packages.
 
 -A package de clarat ion is required at the start of every Go source file. Its main pur pos e is to
 deter mine the defau lt identifier for that package (called the package name) when it is imported
-by another package.
+by another package.Conventionally, the package name is the last seg ment of the import pat h, and as a result, two
+packages may have the same name even thoug h their import pat hs necessarily dif fer. For
+example, the packages whose import pat hs are math/rand and crypto/rand both have the
+name rand.
