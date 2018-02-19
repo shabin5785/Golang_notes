@@ -19,4 +19,7 @@ records exp ort informat ion not just for the package its elf, but for its dep e
 When compiling a package, the compiler must read one object file for each import but need
 not look beyond thes e files.
 
-
+-For packages you intend to share or publish, import pat hs should be globally unique. To avoid
+conflic ts, the import pat hs of all packages other than those from the standard librar y should
+start with the Internet domain name of the organizat ion that owns or hosts the package; this
+also makes it possible to find packages.
