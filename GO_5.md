@@ -43,3 +43,11 @@ import (
 "crypto/rand"
 mrand "math/rand" // alternative name mrand avoids conflict
 )
+
+-The alternat ive name affec ts only the importing file. Other files, even ones in the same package,
+may import the package using its default name, or a dif ferent name.
+A renaming import may be useful even when there is no conflic t. If the name of the imported
+package is unwieldy, as is sometimes the cas e for automat ical ly generated code, an abbreviated
+name may be more convenient. The same short name should be used consistently to avoid
+conf usion. Choosing an alternat ive name can help avoid conflic ts with common local variable
+names.
