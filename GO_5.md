@@ -102,3 +102,10 @@ appeared in the workspace in the previous example.
 Once go get has downlo ade d the packages, it bui lds them and then installs the librar ies and
 commands.
 
+-golint tool, which checks for common sty le problems in Go source code.
+
+-The go get command has support for popular code-hosting sites like GitHub, Bitbucket, and
+Launchpad and can make the appropriate requests to their version-control systems. For less
+well-k nown sites, you may have to indic ate which version-control protocol to use in the
+import pat h, such as Git or Mercurial.
+
