@@ -134,6 +134,11 @@ comes from the bas ename of the first .go file.
 for each package and command instead of throwing it away. Compiled packages are saved
 beneath the $GOPATH/pkg direc tor y corresponding to the src direc tor y in which the source
 resides, and command executables are saved in the $GOPATH/bin direc tor y.
+Thereafter, go build and go install do not
+run the compiler for those packages and commands if they have not changed, mak ing subsequent
+bui lds much faster. For convenience, go build i
+installs the packages that are dep endencies
+of the bui ld target.
 
 
 
