@@ -77,4 +77,8 @@ a bui ld system that computes file dependencies and invokes compilers, assembler
 although it is intentionally less complete than the standard Unix make. And it is a test
 dr iver, as we will
 
+-The only configurat ion most users ever need is the GOPATH environment var iable, which specifies
+the root of the workspace. When switching to a dif ferent workspace, users update the
+value of GOPATH.
+
 
