@@ -23,3 +23,7 @@ not look beyond thes e files.
 conflic ts, the import pat hs of all packages other than those from the standard librar y should
 start with the Internet domain name of the organizat ion that owns or hosts the package; this
 also makes it possible to find packages.
+
+-A package de clarat ion is required at the start of every Go source file. Its main pur pos e is to
+deter mine the defau lt identifier for that package (called the package name) when it is imported
+by another package.
