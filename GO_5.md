@@ -34,3 +34,12 @@ name rand.
 -AGo source file may contain zero or more import de clarat ions immediately after the package
 de clarat ion and before the first non-import declarat ion. Each import declarat ion may specif y
 the import pat h of a single package, or multiple packages in a parenthesize d list.
+
+If we need to import two packages whose names are the same, like math/rand and
+crypto/rand, into a third package, the import declarat ion must specif y an alternat ive name
+for at least one of them to avoid a conflic t. This is cal le d a renaming import
+
+import (
+"crypto/rand"
+mrand "math/rand" // alternative name mrand avoids conflict
+)
