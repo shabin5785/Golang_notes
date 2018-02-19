@@ -87,4 +87,10 @@ control rep ositories beneath src, such as gopl.io or golang.org. The pkg subdir
 is where the bui ld tools store compiled packages, and the bin subdirec tor y holds executable
 prog rams like helloworld
 
+A second environment var iable, GOROOT, specifies the root direc tor y of the Go distr ibution,
+which provides all the packages of the standard librar y. The direc tor y struc ture beneath
+GOROOT resembles that of GOPATH, so, for example, the source files of the fmt package reside in
+the $GOROOT/src/fmt direc tor y. Users never need to set GOROOT since, by defau lt, the go tool
+wi l l use the locat ion where it was installed.
+
 
