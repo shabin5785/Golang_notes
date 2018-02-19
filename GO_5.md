@@ -51,3 +51,8 @@ package is unwieldy, as is sometimes the cas e for automat ical ly generated cod
 name may be more convenient. The same short name should be used consistently to avoid
 conf usion. Choosing an alternat ive name can help avoid conflic ts with common local variable
 names.
+
+-It is an error to import a package into a file but not refer to the name it defines within that file.
+However, on occ asion we must import a package merely for the side effects of doing so: evaluat
+ion of the initializer expressions of its package-le vel var iables and execution of its init functions
+(
