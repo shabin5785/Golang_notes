@@ -141,5 +141,8 @@ of the bui ld target.
 that starts with the name being declared. Function parameters and other identifiers are mentioned
 without quotation or markup
 
+-The go list tool rep orts informat ion about avai lable packages. In its simplest form, go list
+tests whether a package is present in the workspace and prints its import pat h if so
+
 
 
