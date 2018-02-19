@@ -80,5 +80,11 @@ dr iver, as we will
 -The only configurat ion most users ever need is the GOPATH environment var iable, which specifies
 the root of the workspace. When switching to a dif ferent workspace, users update the
 value of GOPATH.
+GOPATH has three subdirec tories. The src subdirec tor y holds source code. Each package
+resides in a direc tor y whos e name relative to $GOPATH/src is the package’s import pat h, such
+as gopl.io/ch1/helloworld. Obs erve that a single GOPATH workspace contains multiple version-
+control rep ositories beneath src, such as gopl.io or golang.org. The pkg subdirec tor y
+is where the bui ld tools store compiled packages, and the bin subdirec tor y holds executable
+prog rams like helloworld
 
 
