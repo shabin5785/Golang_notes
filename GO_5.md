@@ -58,4 +58,10 @@ ion of the initializer expressions of its package-le vel var iables and executio
 
 To suppress the ‘‘unused import’’ er ror we would other wise encounter, we must
 use a renaming import in which the alternat ive name is _, the blank identifier
+**This is known as a blank import**. It is most often used to implement a compile-t ime
+mechanism whereby the main program can enable optional features by blank-importing additional
+packages.
+
+
+
 
