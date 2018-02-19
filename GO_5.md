@@ -113,5 +113,10 @@ import pat h, such as Git or Mercurial.
 the files, so you can use version-control commands to see a dif f of local edits you’ve made or to
 update to a dif ferent revision
 
+-If you specif y the u
+flag , go get wi l l ensure that all packages it visits, including dep endencies,
+are updated to their latest version before being bui lt and instal le d. Without that flag , packages
+that already exist local ly will not be updated.
+
 
 
