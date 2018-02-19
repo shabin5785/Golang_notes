@@ -70,4 +70,11 @@ Be des criptive and unambiguous where possible.
 -go tool, which is used for downlo ading, quer ying,
 formatting, building, testing, and instal ling packages of Go code
 
+-The go tool combines the features of a diverse set of tools into one command set. It is a package
+manager (analogous to apt or rpm) that answers quer ies ab out its inventory of packages,
+computes their dependencies, and downlo ads them from remote version-control systems. It is
+a bui ld system that computes file dependencies and invokes compilers, assemblers, and lin kers,
+although it is intentionally less complete than the standard Unix make. And it is a test
+dr iver, as we will
+
 
