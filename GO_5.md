@@ -124,5 +124,9 @@ is named main, go build invokes the lin ker to create an executable in the cur r
 the name of the executable is taken from the last seg ment of the package’s import pat h. Since each direc tor y contains one package, each executable program, or command in Unix terminolog
 y, requires its own direc tor y
 
+Packages may be specified by their import pat hs, as we saw above, or by a relative direc tor y
+name, which must start with a . or .. segment even if this would not ordinar ily be required.
+If no argument is provide d, the cur rent direc tor y is assumed.
+
 
 
