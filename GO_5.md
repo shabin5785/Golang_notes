@@ -62,6 +62,9 @@ use a renaming import in which the alternat ive name is _, the blank identifier
 mechanism whereby the main program can enable optional features by blank-importing additional
 packages.
 
-
+-When creating a package, keep its name short, but not so short as to be cryptic. The most
+frequently used packages in the standard librar y are named bufio, bytes, flag, fmt, http, io,
+json, os, sort, sync, and time.
+Be des criptive and unambiguous where possible.
 
 
