@@ -1,3 +1,2 @@
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+- Go has two types of packages. main and reusbale. 
+- main is used to create teh executable package. Only package named main will be converted to executable on go build coommand. Only requirement for main package is that it should have a function named main
