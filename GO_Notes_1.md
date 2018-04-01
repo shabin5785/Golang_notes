@@ -12,3 +12,5 @@
 - we have take care of cleaning up resources created during testing
 
 - better start all testing functions names with "Test"
+
+- using descriptive names as test fn names can be pretty useful for debugging
