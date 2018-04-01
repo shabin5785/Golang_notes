@@ -8,3 +8,7 @@
 - go test runs all the tests 
 
 - all test functions are passed an a default pointer argument "testing" by go
+
+- we have take care of cleaning up resources created during testing
+
+- better start all testing functions with "Test"
