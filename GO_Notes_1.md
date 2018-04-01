@@ -11,4 +11,4 @@
 
 - we have take care of cleaning up resources created during testing
 
-- better start all testing functions with "Test"
+- better start all testing functions names with "Test"
