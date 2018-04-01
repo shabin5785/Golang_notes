@@ -4,3 +4,7 @@
 - carefully decide if we want the fn to be a receiver type or pass argument to it. Based on design and the logical analysis.
 
 - to create test the file has to be named as _test.go
+
+- go test runs all the tests 
+
+- all test functions are passed an a default pointer argument "testing" by go
