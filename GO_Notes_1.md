@@ -14,3 +14,5 @@
 - better start all testing functions names with "Test"
 
 - using descriptive names as test fn names can be pretty useful for debugging
+
+- while creating struct objects, we can pass just the values and relay upon go to figure out the fields based on the order. THis is quite confusing and so better use the key value notation of creating structs
