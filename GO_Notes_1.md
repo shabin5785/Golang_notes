@@ -26,3 +26,5 @@
 - struct, maps, channels, pointers and functions: all of them are a reference to a memory location of an underlying basic data strcuture. So when they are passed to a fn, by value, the memory referenc is copied. So passing by value for these and change will affect the values of these functions.
 
 - all other types, when we pass value, we infact pass the value of the contents. structs and maps are like this, because they are made from underlying structures. pointer is obvious, so as functions. Channels ?
+
+- by values : int, float, string, bool and struct. ( value types).. need pointers for these
