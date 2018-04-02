@@ -20,3 +20,5 @@
 - remember to put comma in embedded structs in golang. Even after the internal structs ending brace, if we are declarig it multiline. May be needed for all multi line declaration as well. 
 
 - while embedding struct we can just put embedded struct name within the struct, it becomes that name of embedded struct and field name will be the same as the embedded struct name, Kind of shortcut for declaring
+
+- remember that go can implicitly find our argument type and pass the reference or just the value. We can call the fn using the same way, but based on receiver go will change the way how its called. 
