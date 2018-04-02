@@ -22,3 +22,7 @@
 - while embedding struct we can just put embedded struct name within the struct, it becomes that name of embedded struct and field name will be the same as the embedded struct name, Kind of shortcut for declaring
 
 - remember that go can implicitly find our argument type and pass the reference or just the value. We can call the fn using the same way, but based on receiver go will change the way how its called. This can be confusing, so better explicitly state it.
+
+- struct, maps, channels, pointers and functions: all of them are a reference to a memory location of an underlying basic data strcuture. So when they are passed to a fn, by value, the memory referenc is copied. So passing by value for these and change will affect the values of these functions.
+
+- all other types, when we pass value, we infact pass the value of the contents. structs and maps are like this, because they are made from underlying structures. pointer is obvious, so as functions. Channels ?
