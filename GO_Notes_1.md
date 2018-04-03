@@ -28,3 +28,5 @@
 - all other types, when we pass value, we infact pass the value of the contents. structs and maps are like this, because they are made from underlying structures. pointer is obvious, so as functions. Channels ?
 
 - by values : int, float, string, bool and struct. ( value types).. need pointers for these
+
+- all keys in map shld be of same type. Values shld be of same type. But key and values need not to be same type
