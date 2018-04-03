@@ -41,3 +41,6 @@
 - map we can dynamically remove and add keys. strcuts doesnt allow this.
 
 - go will not complain if we dont use the receiver variable in our code. Now if we are not using it within the functin, we can remove the variable and just keep the type. It will work like a normal defined receiver. 
+
+
+- in go there is no method overloading. 
