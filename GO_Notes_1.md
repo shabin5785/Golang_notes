@@ -30,3 +30,7 @@
 - by values : int, float, string, bool and struct. ( value types).. need pointers for these
 
 - all keys in map shld be of same type. Values shld be of same type. But key and values need not to be same type
+
+- go needs commas after every entry inside objects.. even for last entry
+
+- structs can have value of diff types, while map shld have of same type
