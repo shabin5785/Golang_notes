@@ -33,4 +33,6 @@
 
 - go needs commas after every entry inside objects.. even for last entry
 
-- structs can have value of diff types, while map shld have of same type
+- structs can have value of diff types, while map shld have of same type.
+- struct needs to know all keys at complie time, while for map we can add it on run time.
+
