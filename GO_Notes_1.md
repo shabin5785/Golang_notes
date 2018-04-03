@@ -37,3 +37,7 @@
 - struct needs to know all keys at complie time, while for map we can add it on run time.
 - maps have all keys indexed, while structs its not
 - map is a reference type while struct is a reference type
+- map is generally used to represent closed related props while struct is to group togetehr a set of diverse properties
+- map we can dynamically remove and add keys. strcuts doesnt allow this.
+
+- go will not complain if we dont use the receiver variable in our code. Now if we are not using it within the functin, we can remove the variable and just keep the type. It will work like a normal defined receiver. 
