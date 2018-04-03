@@ -35,4 +35,5 @@
 
 - structs can have value of diff types, while map shld have of same type.
 - struct needs to know all keys at complie time, while for map we can add it on run time.
-
+- maps have all keys indexed, while structs its not
+- map is a reference type while struct is a reference type
