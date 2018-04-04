@@ -43,4 +43,14 @@
 - go will not complain if we dont use the receiver variable in our code. Now if we are not using it within the functin, we can remove the variable and just keep the type. It will work like a normal defined receiver. 
 
 
-- in go there is no method overloading. 
+- in go there is no method overloading.
+
+- interfaces are not generic types. GO doesnt support generics.
+- interfaces are implicit in GO
+- interface is a contract to help us.
+
+- interface can have other interace within it. 
+
+- if we have a interface as type of a field in struct, it means that, that field can have any value that satsifies that interface. We can create custom types that satisfies that interface and use it.
+
+
