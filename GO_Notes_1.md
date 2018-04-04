@@ -53,4 +53,6 @@
 
 - if we have a interface as type of a field in struct, it means that, that field can have any value that satsifies that interface. We can create custom types that satisfies that interface and use it.
 
+- a good example of interface is the reader interface, that is implemented by all types that has data to be consumed
+
 
