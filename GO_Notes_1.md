@@ -49,7 +49,7 @@
 - interfaces are implicit in GO
 - interface is a contract to help us.
 
-- interface can have other interace within it. 
+- interface can have other interace within it. So the enclosing interface will have all embedded interfaces within. to satisfy the enclosing one, we need to satisfy all interfaces within it.
 
 - if we have a interface as type of a field in struct, it means that, that field can have any value that satsifies that interface. We can create custom types that satisfies that interface and use it.
 
