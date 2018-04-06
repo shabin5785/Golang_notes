@@ -57,4 +57,6 @@
 
 - when we run the code, its runs inside a default go routine.
 
-- by default go scheduler runs on a single cpu. THe scheduler runs the go rountines by allocating time slices to them
+- by default go scheduler runs on a single cpu. We can override it. THe scheduler runs the go rountines by allocating time slices to them
+
+- concurrency is not parallelism
