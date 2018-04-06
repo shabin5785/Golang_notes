@@ -55,4 +55,4 @@
 
 - a good example of interface is the reader interface, that is implemented by all types that has data to be consumed
 
-
+- when we run the code, its runs inside a default go routine.
