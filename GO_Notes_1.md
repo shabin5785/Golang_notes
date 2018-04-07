@@ -60,3 +60,5 @@
 - by default go scheduler runs on a single cpu. We can override it. THe scheduler runs the go rountines by allocating time slices to them
 
 - concurrency is not parallelism!!!
+
+- we can iterate over the messages in a channel like we iterate over a slice or a map 
