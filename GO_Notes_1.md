@@ -62,3 +62,5 @@
 - concurrency is not parallelism!!!
 
 - we can iterate over the messages in a channel like we iterate over a slice or a map 
+
+- be careful not to pause the main routine. Always pause the go routines.
