@@ -68,3 +68,5 @@
 - if a fn is running in a go routine and we call another fn from inside that, the second fn also runs inside the go routine
 
 - anyonymous fns or fn literals are a good way to control execution of go rountines. we can call the go routine from within the anonymous fn and control the execution of that as well.
+
+- never ever refer the same variable witin different routines..
