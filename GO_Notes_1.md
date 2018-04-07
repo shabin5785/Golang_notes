@@ -70,3 +70,4 @@
 - anyonymous fns or fn literals are a good way to control execution of go rountines. we can call the go routine from within the anonymous fn and control the execution of that as well.
 
 - never ever refer the same variable witin different routines..
+- so use pass by value to send values to sub routines.. 
